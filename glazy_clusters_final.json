@@ -1,0 +1,799 @@
+{
+    "0a": [
+        "2260: Yellow Straw no GB",
+        "2261: Yellow Straw no GB3"
+    ],
+    "0b": [
+        "1869: Clear Pete's E-11 c04"
+    ],
+    "7": [
+        "4305: Olive Green Celadon",
+        "7974: Olive Green"
+    ],
+    "11": [
+        "6562: Panama Blue",
+        "10976: Kennet and Avon Blue (panama GB variation)",
+        "26235: Panama Red (revised) G-3806 C by Tony Hansen of Digital Fire"
+    ],
+    "15": [
+        "16587: K1DDM223 - Kaki",
+        "26343: Deep iron red"
+    ],
+    "23": [
+        "231: Celadon Fake Blue",
+        "891: Yellow Salt Horie",
+        "3152: Yellow Salt (John Britt)",
+        "3284: White Salt",
+        "12293: Yellow Salt",
+        "12353: Plain Yellow Salt High Fire Glaze Base",
+        "12354: Yellow Salt Green Mint High Fire Glaze Base",
+        "25296: Bruce's Faux Celadon "
+    ],
+    "33a": [
+        "2712: Zamek Clear"
+    ],
+    "37": [
+        "10826: Emmanuel Cooper Wide-Firing Clear Base Glaze + Variations",
+        "11981: Chun Clear",
+        "1091: Celadon",
+        "3973: Kathryn Narrow's Chun ^6 Oxidation Glaze",
+        "3904: Chun faux Celadon",
+        "3918: Chun faux Celadon (variation) Reformulated dKat",
+        "23656: Blue Celadon"
+    ],
+    "39": [
+        "159: Jeff's Long Beach Blue",
+        "8893: Jeff's Long Beach Blue"
+    ],
+    "58": [
+        "2378: Pinnell Grey Green",
+        "8016: Pinnell Grey Green, ^6 ox. 5 Copper Carb.",
+        "8017: Pinnell Grey Green, ^6 ox. 4 Copper Carb.",
+        "8018: Pinnell Grey Green, ^6 ox. 3 Copper Carb.",
+        "17365: Pinnell Grey Green"
+    ],
+    "80a": [
+        "4344: Johnston Temmoku (Tenmoku)"
+    ],
+    "80b": [
+        "4410: Ray's 3D Black ^10 Glaze"
+    ],
+    "88": [
+        "10542: Turquoise Matte 1",
+        "10543: Turquoise Matte 2"
+    ],
+    "95a": [
+        "1352: Majolica c4",
+        "18057: Majolica-esque",
+        "25559: White Majolica-ish "
+    ],
+    "95b": [
+        "1353: Majolica c5 Storer"
+    ],
+    "103a": [
+        "6517: John's Satin"
+    ],
+    "103b": [
+        "6799: MC6 Glossy Base 1"
+    ],
+    "107a": [
+        "19733: Speckle base",
+        "22229: Candied Violets"
+    ],
+    "107b": [
+        "22231: Stardust",
+        "22232: Moss"
+    ],
+    "183": [
+        "1995: M.J. Base",
+        "2026: Majolica M.J. Base"
+    ],
+    "245": [
+        "1341: Kendall Matte",
+        "2770: Kendall Matte Tan"
+    ],
+    "246": [
+        "583: Rene' Ben Lisa (France)",
+        "2872: Lane Shiny Green"
+    ],
+    "250": [
+        "27660: Opal Blue",
+        "27665: Emerald",
+        "27667: Olive"
+    ],
+    "267": [
+        "9643: Fat Cream",
+        "23923: Fat Cream"
+    ],    
+    "268": [
+        "144: Blue Dunham",
+        "2788: Dunham Black Brown Blue"
+    ],
+    "283": [
+        "22230: Buttermilk",
+        "22233: Lavender"
+    ],
+    "323": [
+        "2869: Iron Red Plum",
+        "3240: Plum Red",
+        "5391: Plum Red",
+        "5392: Plum Red Revised"
+    ],
+    "332": [
+        "6201: John's Cash Blue",
+        "8928: ^6 John's Cash Blue"
+    ],
+    "343": [
+        "261: Chun Deller",
+        "6364: Deller Chun"
+    ],
+    "361": [
+        "3283: Nick's Misfire",
+        "19346: Nick's Misfire"
+    ],
+    "367": [
+        "1453: Purple Bright Matt",
+        "10838: Bright Purple"
+    ],
+    "375": [
+        "16712: JDB144 Turquoise",
+        "24574: Janet DeBoos Glaze 144"
+    ],
+    "382": [
+        "1664: 06 Clear",
+        "1808: Clear - U GA recalc"
+    ],
+    "385a": [
+        "181: Blue Stable",
+        "2789: Santerre Stable Blue"
+    ],
+    "385b": [
+        "2786: Blatant Blue"
+    ],
+    "386": [
+        "713: Shrimp",
+        "2812: Shrimp Crystalline"
+    ],
+    "302": [
+        "2023: Majolica Dark White 05-04",
+        "2029: Majolica Ostrom Dark White"
+    ],
+    "530a": [
+        "3810: Pale Celadon"
+    ],
+    "530b": [
+        "17271: Waxy Celadon"
+    ],
+    "538a": [
+        "786: Tessha Rust"
+    ],
+    "53b": [
+        "6184: Larry Bush Amber Celadon"
+    ],
+    "585": [
+        "8651: CO'Riley's white revised MK",
+        "8687: O'Riley's white revised MK (variation)"
+    ],
+    "588": [
+        "214: Celadon",
+        "3710: WWW 325",
+        "2380: Chinese Blue Green",
+        "18053: CJ Blue Green"
+    ],
+    "546a": [
+        "5085: Tenmoku Cedar Valley",
+        "5086: Tenmoku SDSU",
+        "3241: Plum Glaze"
+    ],
+    "546b": [
+        "8332: Black Magic ^10 Reduction Glaze"
+    ],
+    "580": [
+        "2710: Chappel Smooth Alkaline Base",
+        "2711: Chappel Smooth Alkaline Base Blue"
+    ],
+    "584": [
+        "248: Val Cushing V.C. Celadon Lung Chuan",
+        "13113: VC Lung Chuan"
+    ],
+    "185": [
+        "4303: Peggy's Blue",
+        "6515: Frosted Berry"
+    ],
+    "186": [
+        "437: Green Mint Satin Sam Chung",
+        "12357: Sam Chung Satin High Fire Glaze Base",
+        "16277: Green Mint Satin Sam Chung"
+    ],
+    "166": [
+        "443: GREEN ORIBE 4",
+        "446: Green Randy's"
+    ],
+    "189": [
+        "1204: Ellen's Halloween",
+        "5291: Ellen's Halloween"
+    ],
+    "566": [
+        "6561: John's 16X",
+        "12778: SL Temmoku"
+    ],
+    "549": [
+        "5401: Shirley's Glaze Rutile",
+        "5402: Shirley's Glaze Titanium"
+    ],
+    "541": [
+        "171: Blue Persimmon",
+        "2863: Persimmon Blue Brown",
+        "5789: Simmon",
+        "172: Val Cushing Blue Persimmon Glossy",
+        "615: Saturated Iron Persimmon",
+        "12118: Persimmon Celadon"
+    ],
+    "96": [
+        "1437: Persimmon",
+        "2525: Persimmon",
+        "913: Amber Brown Dark Rich",
+        "4155: Persimmon",
+        "24786: Persimmon"
+    ],
+    "89": [
+        "12575: Sunny Yellow",
+        "25416: Sunny Yellow"
+    ],
+    "73": [
+        "1637: White Paul's",
+        "23474: Paul's White"
+    ],
+    "60": [
+        "1812: CLEAR 1",
+        "4689: CLEAR 1.2"
+    ],
+    "573a": [
+        "23836: Tan Yellow"
+    ],
+    "573b": [
+        "17936: PCM7 Anorthite"
+    ],
+    "534": [
+        "442: Green Oribe 3",
+        "4993: Oribe"
+    ],
+    "34": [
+        "439: Green Moss",
+        "5052: Shaner Oribe",
+        "12345: Shaner's Oribe High Fire Glaze Base",
+        "624: Shaner Oribe",
+        "440: Green Oribe",
+        "574: Raspberry Red to Pale Seagreen",
+        "12467: Shaner's Oribe"
+    ],
+    "188a": [
+        "1257: Grey"
+    ],
+    "188b": [
+        "5250: Semi-Opaque Gloss"
+    ],
+    "180a": [
+        "4252: A 9"
+    ],
+    "180b": [
+        "23193: RT Nuka"
+    ],
+    "178": [
+        "466: Hewitt's Clear matt",
+        "1380: Matte Clear",
+        "2777: Hewitt Clear Matte"
+    ],
+    "179a": [
+        "4887: Erickson White"
+    ],
+    "179b": [
+        "5103: Vaughn's White"
+    ],
+    "177": [
+        "10660: Crack Matte White",
+        "12996: Crack white"
+    ],
+    "192": [
+        "1245: Green Mexico Point",
+        "5698: Mexico Point Green"
+    ],
+    "193": [
+        "3252: Pepper Gray",
+        "27464: Pepper Gray (ARAC)"
+    ],
+    "537a": [
+        "357: Copper Red (Walter Donald Kring)",
+        "27457: Kring Red"
+    ],
+    "537b": [
+        "1473: Red Rich Deep"
+    ],
+    "537c": [
+        "352: Copper Red  Norton"
+    ],
+    "532": [
+        "162: Blue Moceri Matt",
+        "2796: Moceri Blue Matte"
+    ],
+    "523": [
+        "150: Blue green Satin Mat Clemson U",
+        "2794: Clemson Blue Green Satin Matte"
+    ],
+    "522": [
+        "20474: Peacock",
+        "25635: Peacock with Nepheline Syenite"
+    ],
+    "264": [
+        "2671: Peacock Blue (Revised)",
+        "2672: Peacock Blue"
+    ],
+    "265": [
+        "582: Red to Green Staley",
+        "756: Staley Red to Green"
+    ],
+    "262": [
+        "2489: Zakin Dark Blue, K15-1",
+        "7721: Zakin K15-1"
+    ],
+    "254": [
+        "364: Copper Red Jeff's",
+        "2968: Jeff's Red",
+        "5106: Vegas Red",
+        "5355: Jeff's Red Glaze",
+        "6372: Jeff's Red"
+    ],
+    "274": [
+        "340: Clear Pinnell Hi Fire",
+        "341: Clear Pinnell Hi Fire Recalc"
+    ],
+    "231": [
+        "1671: Alkaline Deep Turquoise",
+        "1672: Alkaline DeepTurquoise Recalc1"
+    ],
+    "227": [
+        "36: Anderson Blue",
+        "2785: Anderson Blue"
+    ],
+    "226": [
+        "458: Val Cushing Green Willie Hillix",
+        "5765: Willie Hillix"
+    ],
+    "237": [
+        "2396: Cooper Blue Curdle on Jade",
+        "3754: ILG 001"
+    ],
+    "239a": [
+        "1851: Clear Lee's",
+        "2249: Glossy Clear 2, Woody's Base ARAC",
+        "2250: Woody's Base ARAC Variation Radasch",
+        "12116: Wood's Transparent Base Cone 04 glaze"
+    ],
+    "239b": [
+        "12279: Wood's Transparent Ice Blue -- Cone 04"
+    ],
+    "18a": [
+        "1852: Clear Lee's no GB"
+    ],
+    "18b": [
+        "2251: Woody's Base ARAC Variation Radasch no crazing"
+    ],
+    "485c": [
+        "1165: Clear Patti's Crystal 5-7",
+        "1166: Clear Patty's Crystal 2"
+    ],
+    "473": [
+        "8685: Tony mag revised DB 3.0",
+        "8686: Tony mag revised DB 3.0 (variation)"
+    ],
+    "466": [
+        "765: Synthetic Nuka",
+        "9327: Phil Roger's Synthetic Nuka"
+    ],
+    "456": [
+        "6216: John's Red",
+        "17374: John's Red and Silicon Carbide"
+    ],
+    "451a": [
+        "870: White Shiny"
+    ],
+    "451b": [
+        "4828: Bathroom White Glaze"
+    ],
+    "450": [
+        "1035: Blue Celadon no ash",
+        "1095: Celadon Blue no volcanic ash"
+    ],
+    "442": [
+        "165: Blue Opal",
+        "16985: Opal Blue"
+    ],
+    "441": [
+        "136: Blue Celadon - Choy Blue",
+        "4861: CHOY BLUE CELADON"
+    ],
+    "424": [
+        "167: Blue Pablo's",
+        "2797: Pablo Blue"
+    ],
+    "407": [
+        "6657: G1216M",
+        "20546: Transparent for Cone 6 Porcelains"
+    ],
+    "397": [
+        "878: White Yanigara",
+        "5131: Yanagahara White",
+        "5794: Yanagihara"
+    ],
+    "305": [
+        "5290: Deb's Transparent",
+        "5304: Richard's Transparent"
+    ],
+    "301": [
+        "962: Base Ayumi/Lorio 20/80",
+        "963: Base Ayumi/Lorio 20/80 no soda ash"
+    ],
+    "290": [
+        "385: Crystal Blue #383 Emmanuel Cooper's",
+        "2793: Emmanuel Cooper Blue Crystal"
+    ],
+    "205": [
+        "17832: Ben Feiss 0116009",
+        "18308: Ben Feiss 0116009 (Copy) Iron and SiC Celedon"
+    ],
+    "204": [
+        "2705: Janet Deboos Teal Blue",
+        "8329: Teal Blue"
+    ],
+    "206": [
+        "90: Black Brouillard Charcoal",
+        "91: Black Charcoal"
+    ],
+    "328": [
+        "3233: Waxwing Brown",
+        "6813: MC6 Waxwing Brown"
+    ],
+    "41a": [
+        "4901: Gail's Green"
+    ],
+    "41b": [
+        "4902: Gail's Green Cheaper"
+    ],
+    "509": [
+        "2042: Majolica Wichita Doo-Dah",
+        "4125: Witcha Doo-Dah"
+    ],
+    "414": [
+        "1354: Majolica c5 version H",
+        "1355: Majolica Cone 5 Version H"
+    ],
+    "330": [
+        "1360: Majolica Midrange 96",
+        "1361: Majolica Midrange 96 Revised"
+    ],
+    "190": [
+        "2024: Majolica Howell revision",
+        "2025: Majolica Howell revision Recalc"
+    ],
+    "117": [
+        "2002: Maiolica Ostermann 05",
+        "4115: Mathias Majolica",
+        "4116: Mathius Osterman",
+        "4741: Matthias' Majolica Glaze"
+    ],
+    "53": [
+        "1359: Majolica Midrange 2",
+        "4632: Midrange Majolica 2"
+    ],
+    "22a": [
+        "3157: Candace Black Oil Spot",
+        "10346: Oil Spot"
+    ],
+    "22b": [
+        "4840: Black"
+    ],
+    "531": [
+        "27182: WPG02 Ravenscrag Clear (with Roast)",
+        "27183: WPG02 Ravenscrag Clear (with Calcined)"
+    ],
+    "583": [
+        "3603: George Bowes Base with stain additions",
+        "21571: VC 3 (Britt - Midrange Glazes)"
+    ],
+    "487": [
+        "3971: Heath Shino 3 ^6 Glaze",
+        "7412: Heath Shino #3 using Ff3134"
+    ],
+    "82": [
+        "3041: Nutmeg Red",
+        "8321: Nutmeg Red ^6 ox."
+    ],
+    "68": [
+        "1649: Yellow Ochre Glaze",
+        "2406: Barringer Yellow Oxide"
+    ],
+    "563": [
+        "9415: Cornish slate",
+        "9468: Devon slate",
+        "9469: Westcountry slate"
+    ],
+    "512": [
+        "1402: Val Cushing V.C. Matte Awsome KK Revised",
+        "1403: Val Cushing V.C. Matte KK Revised True",
+        "1404: Val Cushing V.C. Matte KK Revised True Revised"
+    ],
+    "506": [
+        "791: Tomato Red",
+        "794: Tomato Red"
+    ],
+    "503": [
+        "8563: O'Riley's White",
+        "12339: O'Riley's White High Fire Glaze"
+    ],
+    "501": [
+        "5416: Unctuous White Glaze",
+        "5417: Unctuous White Glaze REvised"
+    ],
+    "500": [
+        "4635: Yellow Orange",
+        "24809: Stoneware Yellow"
+    ],
+    "478": [
+        "3862: Winn Blue",
+        "5398: Shiny Royal Blue Glaze"
+    ],
+    "48": [
+        "7236: Van Gilder's Tenmoku/Rana",
+        "11145: Red Soda",
+        "11509: Van Gilder's Tenmoku/Rana (variation)"
+    ],
+    "21": [
+        "3170: Randy's 3 in 1",
+        "3171: Randy's 3 in 1 (Tim's version + 10 Redart)"
+    ],
+    "77": [
+        "2039: Val Cushing V.C. Majolica",
+        "2041: Majolica Walter's"
+    ],
+    "288": [
+        "2033: Majolica Ric's New 04",
+        "4716: Ric's New Majolica"
+    ],
+    "344": [
+        "2035: Majolica Siebert",
+        "4132: Terry Siebert"
+    ],
+    "420": [
+        "2004: Majolica",
+        "4127: Jane Gustin"
+    ],
+    "483": [
+        "2030: Majolica Patsy's",
+        "4128: Patsy"
+    ],
+    "49": [
+        "3384: Satin Matt Cone 6 Lt. Green GA23"
+    ],
+    "55": [
+        "2383: Crystalline Green Icing",
+        "8022: Crystalline Aqua Icing, Green Version"
+    ],
+    "90": [
+        "1874: Clear Satin Heather's no GB recalc",
+        "2111: Satin Clear Heather's no GB",
+        "2118: Satin Heather's no GB"
+    ],
+    "94": [
+        "6235: Cone 6 Whiteware/Porcelain Transparent Base Glaze - Plainsman",
+        "24318: Hansen G2926B With Mason Stain"
+    ],
+    "108": [
+        "225: Celadon C9R Beherens Revised",
+        "5186: Lithium Clear",
+        "6283: Lithium Clear"
+    ],
+    "112": [
+        "5970: Triin's rutile yellow",
+        "9278: Triin's rutile yellow (variation: sub Hyplas 71 ball clay with OM 4)"
+    ],
+    "130": [
+        "5077: STONEY WHITE",
+        "5078: STONEY WHITE"
+    ],
+    "132": [
+        "1275: IE 4"
+    ],
+    "133": [
+        "2523: Wolff Plum",
+        "3232: Plum Glaze"
+    ],
+    "145": [
+        "5404: Single Fire Gloss Glaze",
+        "5466: Single Fire Gloss Glaze (original)"
+    ],
+    "148": [
+        "12352: Narnia Closet Mystery Crystal High Fire Glaze Base",
+        "26539: Narnia magic crystal"
+    ],
+    "151": [
+        "1714: Base Mottled Semi-Gloss no 3185",
+        "1715: Base Mottled Semi-Gloss no GB"
+    ],
+    "154": [
+        "1397: Matte Super Dry",
+        "1398: Matte Super Dry no GB"
+    ],
+    "155": [
+        "14: Alkaline Lee Rexrode",
+        "1500: Satin Matte Rexrode"
+    ],
+    "159": [
+        "2115: Satin Clear Pinnell Best",
+        "2136: Satin Pete's Best"
+    ],
+    "169": [
+        "1550: Stone Matte",
+        "7654: VC Stone mat, whitish, base"
+    ],
+    "194": [
+        "3785: 6713/8 Glossy yellowish with blue crystals",
+        "12207: Glossy Yellow with Blue Crystals"
+    ],
+    "196": [
+        "450: Green Rob's",
+        "5034: Robber Green"
+    ],
+    "435": [
+        "3246: Reitz Blue",
+        "5745: Blue Olive"
+    ],
+    "181a": [
+        "1284: IE 50"
+    ],
+    "181b": [
+        "7791: celadon blue"
+    ],
+    "455": [
+        "2927: Nigel Wood Jun (Chun)",
+        "17282: Nigel Wood Jun Variation for NCC"
+    ],
+    "142": [
+        "819: Val Cushing V.C. Kyllikki Matte Revised",
+        "4940: Kyllilli"
+    ],
+    "143": [
+        "4899: G Red Overglaze",
+        "4900: G Red Overglaze"
+    ],
+    "160": [
+        "129: Bleu textur\u00e9",
+        "175: Blue Royal",
+        "184: Blue Textured 2",
+        "24682: Edouard's Bleu textur\u00e9 #2"
+    ],
+    "198": [
+        "5319: Barnes 1",
+        "5320: Barnes 1.2",
+        "5820: Ferguson White"
+    ],
+    "139": [
+        "483: Ken's Great Glaze",
+        "512: Matte Hamada",
+        "5352: Hamada Green/Brown Matt"
+    ],
+    "398": [
+        "2967: Hamada Rust",
+        "10924: Tenmoku",
+        "4912: Hamada Rust",
+        "5029: Rhodes Saturated-Iron Glaze"
+    ],
+    "429": [
+        "135: Blue Carlton Mottled",
+        "2790: Carlton Mottled Blue"
+    ],
+    "135": [
+        "6422: Triin's Icing Pink",
+        "10827: Triin's Cherry Blossom Pink",
+        "17371: Triin's Cherry Blossom Pink"
+    ],
+    "123": [
+        "1236: Green Dragon Matt",
+        "3724: WWW 459",
+        "6321: Green Dragon"
+    ],
+    "128": [
+        "2103: Rosie's Base",
+        "2104: Rosie's Satin black 04"
+    ],
+    "136a": [
+        "610: Satin Rick Haynes"
+    ],
+    "136b": [
+        "7369: Satin Matte Glaze From Albion Stafford"
+    ],
+    "415": [
+        "22234: Angela's Clear",
+        "22236: Angela's Clear - Blue"
+    ],
+    "359": [
+        "7038: Daly's Oil Spot + ulexite 10",
+        "17633: Daly's Tango"
+    ],
+    "355": [
+        "1088: Buttery P103 from K Grandy",
+        "1144: Clear Buttery Grandey"
+    ],
+    "348": [
+        "2753: Burke Celadon Turquoise",
+        "8023: Burkes Celedon,^6 ox. 0.25 Copper Carb.",
+        "9435: Burke's Strong Celadon"
+    ],
+    "390": [
+        "2810: Cooper White",
+        "27139: Cooper 322 - white"
+    ],
+    "391": [
+        "917: Amber New Tyler",
+        "2490: Zakin New Tyler Amber"
+    ],
+    "374": [
+        "2992: Amber",
+        "19361: Amber Celadon"
+    ],
+    "376": [
+        "3407: Carmen's Turquoise",
+        "11954: Carmen's Turquoise (tom's add more clay variation)"
+    ],
+    "371": [
+        "6835: Reader's Digest ^04 Clear",
+        "6838: Reader's Digest ^04 Red Glaze"
+    ],
+    "384": [
+        "3680: B 123",
+        "19393: Rusty Iron Oil Spot"
+    ],
+    "327": [
+        "969: Base Dave's",
+        "1555: Tan  Dave's Base"
+    ],
+    "314a": [
+        "11126: Hill's White Modified"
+    ],
+    "314b": [
+        "19031: Steven Hill Satin White"
+    ],
+    "157": [
+        "3727: WWW 285",
+        "6356: Keen Green"
+    ],
+    "321": [
+        "1020: Black Mirror",
+        "2483: Mirror Black"
+    ],
+    "310": [
+        "1187: Creme of Mushroom",
+        "3689: WWW 313"
+    ],
+    "172": [
+        "1623: White base yee vian shin 1",
+        "1647: yee vian shin 1",
+        "3694: WWW 504"
+    ],
+    "333a": [
+        "1573: Translucent Base (Val Cushing V.C. Celadon)"
+    ],
+    "333b": [
+        "3210: Translucent Base 5 (Val Cushing V.C. Celadon)"
+    ],
+    "329": [
+        "9136: 3M-4",
+        "16544: John's 3M-4 ( in Mid-Range Book)",
+        "26121: 3M-4 (Toms UK Version)"
+    ],
+    "122a": [
+        "2351: Cooper Matte Base"
+    ],
+    "122b": [
+        "3009: Cooper Blue Speckled Matte (variation)"
+    ]
+}
