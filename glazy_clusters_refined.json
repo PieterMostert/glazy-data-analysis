@@ -135,19 +135,6 @@
         "2689: Chappell Clear Semigloss",
         "2759: Alfred White"
     ],
-    "13": [
-        "349: Copper Blue",
-        "1067: Brilliant Matte Turquoise",
-        "2444: Barium Blue",
-        "4529: turquoise matte by John Brit",
-        "4857: Carmen's Turquoise Blue",
-        "5176: Bright Green to Turquoise Matte",
-        "6594: Barium Matt Turquoise (Emmanuel Cooper)",
-        "8210: Barium Blue, ^6 Stontium sub",
-        "8225: Heino Turquoise ^10",
-        "9530: Heino Turquoise ^10 (variation)",
-        "12750: WWW 332"
-    ],
     "14": [
         "1383: Satin Matte Kathy King",
         "1489: Satin Dixon no GB",
@@ -218,10 +205,6 @@
         "4131: Ron Forbes",
         "23494: Flux Glaze"
     ],
-    "492": [
-        "2017: Majolica Batz Basic",
-        "4708: Majolica a la Pugh"
-    ],
     "550": [
         "2020: Majolica Black Siebert Howell Revision less Si",
         "2021: Majolica Black Siebert Howell Revision less Si more KNaO"
@@ -270,16 +253,6 @@
         "3777: 92210a Traditional black Tenmoku",
         "4985: Oestrich Temoku",
         "5785: Honey (Heavy Iron) Salt"
-    ],
-    "32": [
-        "1857: Clear Mere Kari w Sr",
-        "2129: satin Noelle's 3134",
-        "2130: satin Noelle's frit P54",
-        "2133: satin Noelle's w Sr frit"
-    ],
-    "555": [
-        "1856: Clear Mere Kari",
-        "2128: satin Noelle's"
     ],
     "36": [
         "3096: Alisa Butter Base Sky Blue",
@@ -440,10 +413,6 @@
         "7661: VC Satin Mat Smooth Whitish, 2 Cobalt Carb. ^5-6",
         "7663: VC Satin Mat smooth whitish, base ^5-6 ox."
     ],
-    "54": [
-        "2617: Behrens Barium Base",
-        "5225: Gloss"
-    ],
     "57": [
         "7281: Astor#23 Ocean",
         "7317: Astor#23 Serie Cu/Fe 26",
@@ -493,15 +462,6 @@
         "3248: Woo Blue",
         "5125: WOO BLUE BROWN"
     ],
-    "63": [
-        "16585: Spot Blue",
-        "18184: Milky Gloss"
-    ],
-    "66": [
-        "2125: Satin Matte Leadless G3023",
-        "4711: Boron-free Clear",
-        "4720: Satin Matte"
-    ],
     "67": [
         "6071: Chun or Jun",
         "6207: Selsor Chun, RIO 0.5/1/1.5/2",
@@ -517,10 +477,6 @@
     "69": [
         "351: Copper Red",
         "4854: Candy Red"
-    ],
-    "70": [
-        "5788: Pumpkin",
-        "5799: Shaner Orange"
     ],
     "71": [
         "21133: VC/Easy Glossy",
@@ -545,13 +501,6 @@
     "75": [
         "4105: OSL3V = Cobalt",
         "4106: OSL3V + Cobalt"
-    ],
-    "81": [
-        "2694: Roy Black 3",
-        "3388: Ron Roy Black Glossy Cone 6",
-        "4022: MC6 Licorice (Glossy Base II)",
-        "6200: Gloss Black",
-        "19753: Toms Glossy Base Glaze 2 recalc - reduction celadon version"
     ],
     "84": [
         "3037: Gartside 28 Base",

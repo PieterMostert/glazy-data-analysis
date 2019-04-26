@@ -15,6 +15,19 @@
         "10976: Kennet and Avon Blue (panama GB variation)",
         "26235: Panama Red (revised) G-3806 C by Tony Hansen of Digital Fire"
     ],
+    "13": [
+        "349: Copper Blue",
+        "1067: Brilliant Matte Turquoise",
+        "2444: Barium Blue",
+        "4529: turquoise matte by John Brit",
+        "4857: Carmen's Turquoise Blue",
+        "5176: Bright Green to Turquoise Matte",
+        "6594: Barium Matt Turquoise (Emmanuel Cooper)",
+        "8210: Barium Blue, ^6 Stontium sub",
+        "8225: Heino Turquoise ^10",
+        "9530: Heino Turquoise ^10 (variation)",
+        "12750: WWW 332"
+    ],
     "15": [
         "16587: K1DDM223 - Kaki",
         "26343: Deep iron red"
@@ -28,6 +41,14 @@
         "12353: Plain Yellow Salt High Fire Glaze Base",
         "12354: Yellow Salt Green Mint High Fire Glaze Base",
         "25296: Bruce's Faux Celadon "
+    ],
+    "32a": [
+        "1857: Clear Mere Kari w Sr"
+    ],
+    "32b": [
+        "2129: satin Noelle's 3134",
+        "2130: satin Noelle's frit P54",
+        "2133: satin Noelle's w Sr frit"
     ],
     "33a": [
         "2712: Zamek Clear"
@@ -45,6 +66,11 @@
         "159: Jeff's Long Beach Blue",
         "8893: Jeff's Long Beach Blue"
     ],
+    "54": [
+        "2617: Behrens Barium Base",
+        "2619: Behrens Barium Base Brown",
+        "5225: Gloss"
+    ],
     "58": [
         "2378: Pinnell Grey Green",
         "8016: Pinnell Grey Green, ^6 ox. 5 Copper Carb.",
@@ -52,11 +78,31 @@
         "8018: Pinnell Grey Green, ^6 ox. 3 Copper Carb.",
         "17365: Pinnell Grey Green"
     ],
+    "63": [
+        "16585: Spot Blue",
+        "18184: Milky Gloss"
+    ],
+    "66": [
+        "2125: Satin Matte Leadless G3023",
+        "4711: Boron-free Clear",
+        "4720: Satin Matte"
+    ],
+    "70": [
+        "5788: Pumpkin",
+        "5799: Shaner Orange"
+    ],
     "80a": [
         "4344: Johnston Temmoku (Tenmoku)"
     ],
     "80b": [
         "4410: Ray's 3D Black ^10 Glaze"
+    ],
+    "81": [
+        "2694: Roy Black 3",
+        "3388: Ron Roy Black Glossy Cone 6",
+        "4022: MC6 Licorice (Glossy Base II)",
+        "6200: Gloss Black",
+        "19753: Toms Glossy Base Glaze 2 recalc - reduction celadon version"
     ],
     "88": [
         "10542: Turquoise Matte 1",
@@ -158,6 +204,10 @@
         "2023: Majolica Dark White 05-04",
         "2029: Majolica Ostrom Dark White"
     ],
+    "492": [
+        "2017: Majolica Batz Basic",
+        "4708: Majolica a la Pugh"
+    ],
     "530a": [
         "3810: Pale Celadon"
     ],
@@ -169,6 +219,12 @@
     ],
     "53b": [
         "6184: Larry Bush Amber Celadon"
+    ],
+    "555a": [
+        "1856: Clear Mere Kari"
+    ],
+    "555b": [
+        "2128: satin Noelle's"
     ],
     "585": [
         "8651: CO'Riley's white revised MK",
