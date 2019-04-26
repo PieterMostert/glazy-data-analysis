@@ -9,7 +9,7 @@ If you're impatient, here's a simplified version of the main result: I tried to 
 
 This is a bit misleading, since some points overlap, so here's a histogram showing the distribution of errors (predicted - actual).
 
-![Alt text](images/Prediction_error_histogram.png?raw=true "Histogram of errors")
+![Histogram of errors](images/prediction_error_histogram.png)
 
 In an ideal world, the firing temperature would be a function of the chemical composition of a glaze, and with enough data we'd be able to approximate this function reasonably well. Unfortunately, things aren't so simple, for several reasons. The first is that the maturity of a glaze depends on the rate at which the temperature increases, not just the maximum temperature. But if we fix the rate of temperature rise, this isn't an issue. To be concrete, we'll assume the rate of temperature rise is 60C/hr, which allows us to convert Orton cones to temperatures. 
 
