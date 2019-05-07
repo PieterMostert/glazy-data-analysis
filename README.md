@@ -1,7 +1,7 @@
 ## Glazy Data Analysis
 
 (Work in progress)
-This project describes my attempts to use machine learning to understand the effect of chemical composition on the firing temperature of ceramic glazes. The dataset of glazes I'm using is taken from Glazy, an open-source database of glaze recipes. 
+This project describes my attempts to use machine learning to understand the effect of chemical composition on the firing temperature of ceramic glazes. The dataset of glazes I'm using is taken from Glazy[\https:www.glazy.org], an open-source database of glaze recipes. 
 
 If you're impatient, here's a simplified version of the main result: I tried to predict the firing temperature of glazes based on their chemical compositions, and the predictions aren't particularly accurate. The chart below shows the given firing temperatures vs the predicted ones. 
 
