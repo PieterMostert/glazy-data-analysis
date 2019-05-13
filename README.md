@@ -1,15 +1,25 @@
 ## Glazy Data Analysis
 
 (Work in progress)
-This project describes my attempts to use machine learning to understand the effect of chemical composition on the firing temperature of ceramic glazes. The dataset of glazes I'm using is taken from Glazy[\https:www.glazy.org], an open-source database of glaze recipes. 
+This project describes my attempts to use machine learning to understand the effect of chemical composition on the firing temperature of ceramic glazes. The dataset of glazes I'm using is taken from (Glazy)[\https:www.glazy.org], an open-source database of glaze recipes. 
 
-If you're impatient, here's a simplified version of the main result: I tried to predict the firing temperature of glazes based on their chemical compositions, and the predictions aren't particularly accurate. The chart below shows the given firing temperatures vs the predicted ones. 
+The recipes in Glazy come mostly from collections put together by American potters since the 1970s, although many of them probably originate much earlier, in China and Japan. They therefore reflect an aesthetic (or rather, several groups of aesthetics) that is not representative of all glazes ever made, or of all potential glazes. A model that is good at predicting the firing temperatures of glazes in this collection is of limited use, since recipes coming from the same population most likely already have an established firing temperature, and a test recipe created independently can't be said to be a random sample from this population.
+
+However, there are at least two situations where a model can be useful:
+
+1. A model can be used to flag recipes in the collection that may be recorded incorrectly. In fact, I've already found a number of incorrect records by examining glazes whose stated firing temperature differs wildly from the predicted one.
+
+2. If we have a model that gives predictions together with confidence intervals, we can say something meaningful about test glazes. To do this, I've used a Gaussian process model. Unfortunately the training time scales cubically with the number of recipes, so if Glazy expands substantially, this may become infeasable.
+
+Before continuing, let's have a look at how well the best model performs at prediction on the test set. The chart below shows the given firing temperatures vs the ones predicted using XGBoost, with parameters chosen to maximise the R2 cross-validation score. 
 
 [INSERT IMAGE]
 
-This is a bit misleading, since some points overlap, so here's a histogram showing the distribution of errors (predicted - actual).
+This may be a bit misleading, since some points overlap, so here's a histogram showing the distribution of errors (predicted - actual).
 
 ![Histogram of errors](Images/Prediction_error_histogram.png)
+
+We won't be using this model for cases (1) or (2), since it's completely overfit, but it gives an idea of amount of noise in the data (alternatively, it shows my lack of skill in fitting models correctly).
 
 In an ideal world, the firing temperature would be a function of the chemical composition of a glaze, and with enough data we'd be able to approximate this function reasonably well. Unfortunately, things aren't so simple, for several reasons. The first is that the maturity of a glaze also depends not only on the maximum temperature, but also on the rate at which the temperature increases. For this reason, [pyrometric cones](https://en.wikipedia.org/wiki/Pyrometric_cone) are used instead of temperatures. However, for a fixed rate of temperature rise, a pyrometric cone will bend at a pre-determined temperature. The glazes in Glazy are described in terms of Orton cones, and I've used the [chart](https://www.ortonceramic.com/files/2676/File/Orton-Cone-Chart-C-022-14-2016) published by Orton, with a 60C/hr rate of temperature rise to map from Orton cones (regular, self-supporting) to temperatures. We'll continue to refer to the firing temperature of a glaze, with the understanding that this implicitly refers to its Orton cone under the inverse of this mapping.
 
@@ -33,10 +43,26 @@ Non-uniform distribution of firing temperatures.
 
 A big issue with this dataset is that there are many duplicates and slight variants. If these are not dealt with, the test set will overlap with the training set, and this will artificially decrease the test error. While the duplicates are easy to identify, the slight variants pose a substantial challenge.
  
-I've only posted the result of a clustering algorithm (K-means), followed by manually verifying that the glazes in each cluster do have a common origin, and that separate clusters aren't related, and splitting or combining them as necessary. The manual verification process is incomplete, however. I've posted the verified clusters here: 
+I decided to deal with this problem by grouping glazes that derive from a common origin, and weighting them so that the sum of the weights in a group is one. It's not clear what the best way of grouping glazes is, but I decided to place glaze recipes A and B in the same group if at least one of the following cases holds:
+
+* Percentages of materials in recipes A and B differ by a small amount
+
+* Recipes A has the same as recipe B, except that one or more material have been replaced by similar ones (for example, Custer Feldspar with G-200 Feldspar), 
+
+* Recipe A is a reformulation, with different materials, of recipe B.
+
+* Recipe A is recipe B plus colouring/opacifying oxides.  
+
+* Recipe A and B form part of the same biaxial test.
+
+Note that in the last two conditions, the oxide compositions may differ considerably. 
+
+To group the glazes, I used the K-means clustering algorithm to identify potential groups, and then examined them on a case-by-case basis to see if they should be split or combined with other groups, based on the conditions above. This is a painstaking process that involves looking up the recipes on Glazy. There's a fair amount of ambiguity involved, and I've had a make a number of judgement calls. Fortunately Glazy gives a list of recipes with the same base, which helps with the second last case. 
+
+I still haven't finished going through the potential groups manually, but I've processed just over 60% of them. The ones I've checked can be found here:
 
 https://pietermostert.github.io/glazy-data-analysis/html/verified-clusters.html,
 
-and the unverified ones here:
+and the rest here:
 
 https://pietermostert.github.io/glazy-data-analysis/html/unverified-clusters.html
