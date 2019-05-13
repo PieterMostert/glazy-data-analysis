@@ -27,7 +27,7 @@ Some errors (eg cone 08 vs cone 8), some glazes that are underfired, materials w
 
 Non-uniform distribution of firing temperatures.
 
-[INSERT HISTOGRAM]
+![Histogram of firing temperatures](Images/Firing_temperature_histogram.png)
 
 A big issue with this dataset is that there are many duplicates and slight variants. If these are not dealt with, the test set will overlap with the training set, and this will artificially decrease the test error. While the duplicates are easy to identify, the slight variants pose a substantial challenge.
  
