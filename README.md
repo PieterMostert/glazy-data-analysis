@@ -1,7 +1,7 @@
 ## Glazy Data Analysis
 
 (Work in progress)
-This project describes my attempts to use machine learning to understand the effect of chemical composition on the firing temperature of ceramic glazes. The dataset of glazes I'm using is taken from [Glazy](\https:www.glazy.org), an open-source database of glaze recipes. 
+This project describes my attempts to use machine learning to understand the effect of chemical composition on the firing temperature of ceramic glazes. The dataset of glazes I'm using is taken from [Glazy](https:www.glazy.org), an open-source database of glaze recipes. 
 
 The recipes in Glazy come mostly from collections put together by American potters since the 1970s, although many of them probably originate much earlier, in China and Japan. They therefore reflect an aesthetic (or rather, several groups of aesthetics) that is not representative of all glazes ever made, or of all potential glazes. A model that is good at predicting the firing temperatures of glazes in this collection is of limited use, since recipes coming from the same population most likely already have an established firing temperature. On the other hand, test recipes created by randomly choosing ingredients generate a different distribution, so one can't say anything about the accuracy of the model when applied to such recipes.
 
@@ -90,7 +90,8 @@ It appears that glazes high in Alumina and Boron tend to have fairly wide firing
 
 A number of oxides are only present in non-trivial amounts in a minority of glazes, which makes it unlikely that their effect on the firing temperature will be visible in the data. The chart below shows the weighted percent of glazes that contain more than 0.5 percent mole of the oxides listed.
 
-![Percentages of glazes containing non-trivial amounts of given oxides](Images/Glazes_containing_given_oxide.png)
+![Percentages of glazes containing non-trivial amounts of given oxides](Images/recipes_containing_given_oxide.png)
+![Histogram of errors](Images/Prediction_error_histogram.png)
 
 It's debatable what the threshhold for a non-trivial amount should be, and 0.5 percent mole was chosen somewhat arbitrarily. Tin and Zircon have less of an effect on the firing temperature, so I decided to raise the threshhold for SnO and ZrO to 5 percent, which gives
 
