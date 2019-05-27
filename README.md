@@ -91,7 +91,6 @@ It appears that glazes high in Alumina and Boron tend to have fairly wide firing
 A number of oxides are only present in non-trivial amounts in a minority of glazes, which makes it unlikely that their effect on the firing temperature will be visible in the data. The chart below shows the weighted percent of glazes that contain more than 0.5 percent mole of the oxides listed.
 
 ![Percentages of glazes containing non-trivial amounts of given oxides](Images/recipes_containing_given_oxide.png)
-![Histogram of errors](Images/Prediction_error_histogram.png)
 
 It's debatable what the threshhold for a non-trivial amount should be, and 0.5 percent mole was chosen somewhat arbitrarily. Tin and Zircon have less of an effect on the firing temperature, so I decided to raise the threshhold for SnO and ZrO to 5 percent, which gives
 
@@ -102,5 +101,3 @@ I decided not to automate the removal of outliers. However, I used an isolation 
 *Which metrics to use / format of data
 
 There are several ways to represent the composition of oxides in a glaze. It may appear that the most natural way is by giving the percentage of each oxide by weight. However, from a chemistry viewpoint, a more natural way is to consider the percentages of the numbers of molecules of each oxide, or 'molar percent'. A third way, introduced by Herman Seger in his study of glazes, is to take the molar percentages and divide them by the sum of the flux molar percentages. This is known as the unity molecular formula, or UMF. I haven't found that any one of these is unequivocally better than the rest. 
-
-When using radial basis functions, 
