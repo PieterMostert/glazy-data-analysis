@@ -1,9 +1,9 @@
-## Glazy Data Analysis
+# Glazy Data Analysis
 
 (Work in progress)
 This project describes my attempts to use machine learning to understand the effect of chemical composition on the firing temperature of ceramic glazes. The dataset of glazes I'm using is taken from [Glazy](https:www.glazy.org), an open-source database of glaze recipes. 
 
-The recipes in Glazy come mostly from collections put together by American potters since the 1970s, although many of them probably originate much earlier, in China and Japan. They therefore reflect an aesthetic (or rather, several groups of aesthetics) that is not representative of all glazes ever made, or of all potential glazes. A model that is good at predicting the firing temperatures of glazes in this collection is of limited use, since recipes coming from the same population most likely already have an established firing temperature. On the other hand, test recipes created by randomly choosing ingredients generate a different distribution, so one can't say anything about the accuracy of the model when applied to such recipes.
+The recipes in Glazy come mostly from collections put together by American potters since the 1970s, although many of them probably originate much earlier, in China, Korea, and Japan. They therefore reflect an aesthetic (or rather, several groups of aesthetics) that is not representative of all glazes ever made, or of all potential glazes. A model that is good at predicting the firing temperatures of glazes in this collection is of limited use, since recipes coming from the same population most likely already have an established firing temperature. On the other hand, test recipes created by randomly choosing ingredients generate a different distribution, so one can't say anything about the accuracy of the model when applied to such recipes.
 
 To illustrate this, I've shown the distribution of firing temperatures below (restricted to 1050C and above - the ones below 1050C make up only 1.2% of the total)
 
@@ -65,17 +65,11 @@ Note that in the last two conditions, the oxide compositions may differ consider
 
 To group the glazes, I used the K-means clustering algorithm to identify potential groups, and then examined them on a case-by-case basis to see if they should be split or combined with other groups, based on the conditions above. This is a painstaking process that involves looking up the recipes on Glazy. There's a fair amount of ambiguity involved, and I've had a make a number of judgement calls. Fortunately Glazy gives a list of recipes with the same base, which helps with the second last case. 
 
-I still haven't finished going through the potential groups manually, but I've processed just over 70% of them. The ones I've checked can be found here:
+I still haven't finished going through the potential groups manually, but I've processed just over 70% of them. The ones I've checked can be found [here](https://pietermostert.github.io/glazy-data-analysis/html/verified-clusters.html), and the rest [here](https://pietermostert.github.io/glazy-data-analysis/html/unverified-clusters.html)
 
-https://pietermostert.github.io/glazy-data-analysis/html/verified-clusters.html,
+## Data cleaning
 
-and the rest here:
-
-https://pietermostert.github.io/glazy-data-analysis/html/unverified-clusters.html
-
-# Data cleaning
-
-The original dataset can be found here. I've placed a modified copy here. Modifications are restricted to changing the cones for several glazes, based on information found in the notes (which can be found on Glazy, but are not included in the snapshot). Several glazes were listed as being cone 08, for example, when they should be cone 8. I've recorded the glazes changed as comments in recipe_prep_1. 
+A modified copy of the dataset can be found [here](https://pietermostert.github.io/glazy-data-analysis/GlazyRecipes.csv). Modifications are restricted to changing the cones for several glazes, based on information found in the notes (which can be found on Glazy, but are not included in the CSV file). Several glazes were listed as being cone 08, for example, when they should be cone 8. I've recorded the glazes changed as comments in [recipe_processing_1](https://pietermostert.github.io/glazy-data-analysis/recipe_processing_1.py). 
 
 For glazes where only the lower cone was indicated, I set the upper cone equal to the lower cone (and vice versa). Glazes which had neither upper nor lower cone indicated were removed. 
 I removed recipes containing rare earth elements (there were only 3 in the database snapshot I used, but there are more now). I removed Egyptian paste recipes, which are misclassified under glazes, as well as two series of sculptural glazes. 
@@ -98,6 +92,6 @@ Based on this, and to reduce the dimension of the feature space, I excluded glaz
 
 I decided not to automate the removal of outliers. However, I used an isolation forest to identify outliers, and examined these individually. This turned up a couple of recipes where an ingredient was missing its oxide analysis. 
 
-*Which metrics to use / format of data
+## Which metrics to use / format of data
 
 There are several ways to represent the composition of oxides in a glaze. It may appear that the most natural way is by giving the percentage of each oxide by weight. However, from a chemistry viewpoint, a more natural way is to consider the percentages of the numbers of molecules of each oxide, or 'molar percent'. A third way, introduced by Herman Seger in his study of glazes, is to take the molar percentages and divide them by the sum of the flux molar percentages. This is known as the unity molecular formula, or UMF. I haven't found that any one of these is unequivocally better than the rest. 
