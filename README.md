@@ -1,6 +1,9 @@
 # Glazy Data Analysis
 
 (Work in progress)
+
+## Introduction
+
 This project describes my attempts to use machine learning to understand the effect of chemical composition on the firing temperature of ceramic glazes. The dataset of glazes I'm using is taken from [Glazy](https://glazy.org), an open-source database of glaze recipes. 
 
 The recipes in Glazy come mostly from collections put together by American potters since the 1970s, although many of them probably originate much earlier, in China, Korea, and Japan. They therefore reflect an aesthetic (or rather, several groups of aesthetics) that is not representative of all glazes ever made, or of all potential glazes. A model that is good at predicting the firing temperatures of glazes in this collection is of limited use, since recipes coming from the same population most likely already have an established firing temperature. On the other hand, test recipes created by randomly choosing ingredients generate a different distribution, so one can't say anything about the accuracy of the model when applied to such recipes.
@@ -17,17 +20,11 @@ However, there are at least two situations where a model can be useful:
 
 2. If we have a model that gives predictions together with confidence intervals, we can say something meaningful about independently created test glazes. This is still a work in progress. I've looked at using a Gaussian process model, but it's not immediately clear how best to take into account the fact that glazes occur in groups (more on this below). Another issue is that the training time scales cubically with the number of recipes, so if Glazy expands substantially, this approach may become infeasable. There may be other approaches that can be tackled using Tensorflow's probability library, but I haven't looked into this yet. As a temporary stand-in, I've plotted the density of data points alongside the predictions to give some indication of how much confidence to place in them.
 
-For example, the first plot below shows the predictions for a family of glazes where only the proportions of Silica and Alumina are varied. Below it is a plot of the density. The predictions in the regions of high density are in line with conventional wisdom (see Daniel de Montmollin).
+For example, the first plot below shows the predictions for a family of glazes where only the proportions of Silica and Alumina are varied. Below it is a plot of the density. The predictions in the regions of high density are in line with conventional wisdom (see Daniel de Montmollin's fusion diagrams).
 
-Before continuing, let's have a look at how well the model with the best cross-validation R2 score performs at prediction on the test set. The chart below shows the given firing temperatures vs the ones predicted using XGBoost, with parameters chosen to maximise the R2 cross-validation score. 
+![Firing temperature predictions](Images/Stull_temp_predictions.png)
 
-[INSERT IMAGE]
-
-This may be a bit misleading, since some points overlap, so here's a histogram showing the distribution of errors (predicted - actual).
-
-![Histogram of errors](Images/Prediction_error_histogram.png)
-
-We won't be using this model for cases (1) or (2), since it's completely overfit, but it gives an idea of amount of noise in the data (alternatively, it shows my lack of skill in fitting models correctly).
+![Gaussian KDE](Images/Stull_density.png)
 
 In an ideal world, the firing temperature would be a function of the chemical composition of a glaze, and with enough data we'd be able to approximate this function reasonably well. Unfortunately, things aren't so simple, for several reasons. The first is that the maturity of a glaze also depends not only on the maximum temperature, but also on the rate at which the temperature increases. For this reason, [pyrometric cones](https://en.wikipedia.org/wiki/Pyrometric_cone) are used instead of temperatures. However, for a fixed rate of temperature rise, a pyrometric cone will bend at a pre-determined temperature. The glazes in Glazy are described in terms of Orton cones, and I've used the [chart](https://www.ortonceramic.com/files/2676/File/Orton-Cone-Chart-C-022-14-2016) published by Orton, with a 60C/hr rate of temperature rise to map from Orton cones (regular, self-supporting) to temperatures. We'll continue to refer to the firing temperature of a glaze, with the understanding that this implicitly refers to its Orton cone under the inverse of this mapping.
 
@@ -41,17 +38,21 @@ If we could determine, for each oxide composition, the range of temperatures at 
 
 ...
 
-Problems with the dataset:
+## Problems with the dataset:
 
 materials whose analyses differ significantly from their theoretical analyses (Colemanite, ash glazes)
 
-A big issue with this dataset is that there are many duplicates and slight variants. If these are not dealt with, the test set will overlap with the training set, and this will artificially decrease the test error. While the duplicates are easy to identify, the slight variants pose a substantial challenge.
+A number of oxides are only present in non-trivial amounts in a minority of glazes, which makes it unlikely that their effect on the firing temperature will be visible in the data. The chart below shows the weighted percent of glazes that contain more than 0.5 percent mole of the oxides listed.
+
+![Percentages of glazes containing non-trivial amounts of given oxides](Images/recipes_containing_given_oxide.png)
+
+A big issue with this dataset is that there are many duplicates and slight variants. If these are not dealt with, the test set will overlap with the training set, and this will artificially decrease the test error, and encourage overfitting. While the duplicates are easy to identify, the slight variants pose a substantial challenge.
  
 I decided to deal with this problem by grouping glazes that derive from a common origin, and weighting them so that the sum of the weights in a group is one. It's not clear what the best way of grouping glazes is, but I decided to place glaze recipes A and B in the same group if at least one of the following cases holds:
 
-* Percentages of materials in recipes A and B differ by a small amount
+* Percentages of materials in recipes A and B differ by small amounts.
 
-* Recipes A has the same as recipe B, except that one or more material have been replaced by similar ones (for example, Custer Feldspar with G-200 Feldspar), 
+* Recipe A is the same as recipe B, except that one or more materials have been replaced by similar ones (for example, Custer Feldspar with G-200 Feldspar).
 
 * Recipe A is a reformulation, with different materials, of recipe B.
 
@@ -74,17 +75,11 @@ I removed recipes containing rare earth elements (there were only 3 in the datab
 
 I decided to exclude 'speciality' glazes, so removed crawl and crater glazes, and any others where the notes indicated a textured surface, or that they were sculptural. Glazes with Silica : Alumina ratios outside the range 4 - 20 were also removed, which should account for all zinc-silicate macro-crystalline glazes. Since glazes with low Silica relative to the fluxes tend to not be durable, glazes with Silica : flux ratios below 1.8 were removed. This should account for many ash glazes. I haven't specifically removed Shinos, although perhaps I should.
 
-Most potters contributing to Glazy avoid Lead and Cadmium, so glazes containing either of these were removed. Glazes with silver and bismuth subnitrate were also removed, since there were only a handful of them.
+Certain compounds can be toxic to be potter and/or end-user, so are not frequently found. For this reason glazes containing Lead, Cadmium, Fluorine, Vanadium Pentoxide and Bismuth Subnitrate were removed.
 
 Glazes that were marked as untested were removed, as well as glazes described as underfired. A few glazes which had photos that showed a clearly unmelted glaze, were also removed. These glazes were found by searching Glazy for keywords, as well as by examining glazes whose listed temperature was much lower than the predicted firing temperature, based on initial models. The glazes excluded are listed in recipe_processing_1, together with reasons for their exclusion. 
 
 It appears that glazes high in Alumina and Boron tend to have fairly wide firing ranges. As an extreme example, [Purdy and Fox](https://www.ideals.illinois.edu/handle/2142/13255) describe a test glaze successfully fired from cone 010 to 10 (though it does contain Lead). This makes predictions of the average firing temperature both more difficult and less useful, so glazes with Boron over 0.8 UMF were excluded.
-
-A number of oxides are only present in non-trivial amounts in a minority of glazes, which makes it unlikely that their effect on the firing temperature will be visible in the data. The chart below shows the weighted percent of glazes that contain more than 0.5 percent mole of the oxides listed.
-
-![Percentages of glazes containing non-trivial amounts of given oxides](Images/recipes_containing_given_oxide.png)
-
-It's debatable what the threshhold for a non-trivial amount should be, and 0.5 percent mole was chosen somewhat arbitrarily. Tin and Zircon have less of an effect on the firing temperature, so I decided to raise the threshhold for SnO and ZrO to 5 percent, which gives
 
 Based on this, and to reduce the dimension of the feature space, I excluded glazes with more than the threshhold amount of ZrO, FeO, Cu2O, MnO, MnO2, P2O5, Cr2O3 and SrO. Glazes which contained less than the threshhold amounts, had these oxides removed. To further reduce the feature space, I combined the molar percentages of K2O and Na2O, writing the combination as KNaO, as is common practice in the field. While Potassium and Sodium aren't completely interchangeable in glazes, the difference is generally thought to be small. It may be that Barium and Strontium have a similar relationship, but there doesn't seem to be any consensus on this. 
 
