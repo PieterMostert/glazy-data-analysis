@@ -1,0 +1,943 @@
+{
+    "118": [
+        "1100: Satin Celadon",
+        "1133: Clear 184 Gloss Bowes",
+        "1209: Gloss 184",
+        "1214: Gloss Off-White"
+    ],
+    "140": [
+        "1838: Clear glaze 04 w/3134",
+        "4786: Clear",
+        "5190: Matte 4",
+        "5200: Translucent"
+    ],
+    "146": [
+        "862: White Opaque Glossy",
+        "5074: St. John's White 2"
+    ],
+    "147": [
+        "1667: 50% 3269 Surprise  50% Satin Clear Heather's Recalc",
+        "1885: Clear Surprise Recalc",
+        "1886: Clear Surprise Recalc2"
+    ],
+    "153": [
+        "241: Celadon Mather",
+        "5321: BBB"
+    ],
+    "161": [
+        "5751: Choy Blue Celadon",
+        "6858: Reader's Digest Blue Celadon ^9-10 Glaze"
+    ],
+    "163": [
+        "2577: Tessha Brown",
+        "5157: Bold Black Glaze"
+    ],
+    "164": [
+        "1175: Crackle Snowflake #4",
+        "1176: Crackle Snowflake #8",
+        "7050: Escama de Pejerrey/Snowflake",
+        "7052: Snowflake Crackle #8",
+        "11146: Toms Snowflake"
+    ],
+    "4": [
+        "2670: Clausen Snowflake",
+        "2830: Clarke Turquoise",
+        "2837: Karen Starshine Aqua",
+        "7719: Turquoise ^6 (Chris Clarke)"
+    ],
+    "167": [
+        "3333: Coleman Brown Black",
+        "3807: Coleman Brown Black (New Zealand Halloysite)",
+        "5130: Yanagahara Black"
+    ],
+    "176": [
+        "126: Blatant Blue",
+        "327: Clear Georgia",
+        "3294: Leach 4321 Celadon",
+        "3262: Leach 4321 +1% Red Iron Oxide",
+        "3263: Leach 4321 +2% Red Iron Oxide",
+        "3264: Leach 4321 +3% Red Iron Oxide",
+        "3265: Leach 4321 +4% Red Iron Oxide",
+        "3266: Leach 4321 +5% Red Iron Oxide",
+        "3267: Leach 4321 +6% Red Iron Oxide",
+        "3268: Leach 4321 +7% Red Iron Oxide",
+        "3269: Leach 4321 +8% Red Iron Oxide",
+        "3270: Leach 4321 +9% Red Iron Oxide",
+        "3271: Leach 4321 +10% Red Iron Oxide",
+        "3272: Leach 4321 +0.1% Cobalt Oxide",
+        "3273: Leach 4321 +0.2% Cobalt Oxide",
+        "3274: Leach 4321 +0.3% Cobalt Oxide",
+        "3275: Leach 4321 +0.4% Cobalt Oxide",
+        "3276: Leach 4321 +0.5% Cobalt Oxide",
+        "3277: Leach 4321 +0.6% Cobalt Oxide",
+        "3278: Leach 4321 +0.7% Cobalt Oxide",
+        "3279: Leach 4321 +0.8% Cobalt Oxide",
+        "3280: Leach 4321 +0.9% Cobalt Oxide",
+        "3281: Leach 4321 +1% Cobalt Oxide",
+        "3295: Leach 4321 Celadon +1 Tin Oxide",
+        "3296: Leach 4321 Celadon +2 Tin Oxide",
+        "3297: Leach 4321 Celadon +3 Tin Oxide",
+        "3298: Leach 4321 Celadon +4 Tin Oxide",
+        "3299: Leach 4321 Celadon +5 Tin Oxide",
+        "3300: Leach 4321 Celadon +1 Zinc Oxide",
+        "3301: Leach 4321 Celadon +2 Zinc Oxide",
+        "3302: Leach 4321 Celadon +3 Zinc Oxide",
+        "3303: Leach 4321 Celadon +4 Zinc Oxide",
+        "3304: Leach 4321 Celadon +5 Zinc Oxide",
+        "831: Val Cushing V.C. Transparent Base 3",
+        "4949: Mac Celadon",
+        "4004: Storm Blue",
+        "4006: Speckled Red",
+        "4614: Leach w/Inclusion Pigments",
+        "4859: Celadon 1234",
+        "5004: Pete's Chun",
+        "8671: 4321",
+        "9811: Leach Celadon",
+        "11390: Green Celadon",
+        "12333: Clear High Fire Glaze Base",
+        "24306: Leach\u2019s Clear",
+        "812: Val Cushing V.C. IR-E",
+        "817: Val Cushing V.C. IR-J"
+    ],
+    "298": [
+        "29255: Keator Saturate Iron",
+        "4935: Keator Saturate Iron"
+    ],
+    "379": [
+        "853: White Gloss Arrayan Curamilla",
+        "858: White Leach 4321",
+        "2879: White Leach 4321 (variation)",
+        "2891: Shiny White",
+        "5116: White  Glaze",
+        "8144: Opacified Steven Hill Clear (clear glaze with 7% Zircopax)"
+    ],
+    "586": [
+        "142: Blue Dark Gloss",
+        "217: Celadon 4321",
+        "240: Celadon Leach 4321",
+        "418: Gloss Dark Blue",
+        "5752: Foundry Celadon"
+    ],
+    "24": [
+        "2886: Hamada Clear",
+        "3181: Tichane Blue Celadon 532.1",
+        "4990: Leach 1234 with OM4",
+        "5337: D-1 Copper Red",
+        "5368: Leaches Clear"
+    ],
+    "402": [
+        "238: Celadon Grey-Green from Pete Pinnell",
+        "995: Val Cushing Basic",
+        "4944: LEACH CLEAR",
+        "6242: Perfect 4321",
+        "7979: Steven Hill Clear"
+    ],
+    "182": [
+        "482: KCAI BOUBARIC TESSHA SATURATE IRON",
+        "521: Michael Simon Tessha",
+        "543: Oil Spot Harding",
+        "781: Boubaric Tessha",
+        "4934: KCAIBOUBARIC TESHA",
+        "5087: Tessha",
+        "5088: Tesha Saturate Iron (Boubaric)"
+    ],
+    "187": [
+        "5503: Browning White",
+        "21399: V.C. Val Cushing Satin White Liner #4"
+    ],
+    "191": [
+        "1167: Clear Plainsman",
+        "1870: Clear Pete's E-12",
+        "2584: Frit EZ clear",
+        "4740: Matte 2",
+        "5181: Clear With Colorants"
+    ],
+    "202": [
+        "1208: Transparent Gloss #3",
+        "5489: Ben's Clear ^6 01",
+        "18179: Clear/V.C. Transparent Glossy 3 revised"
+    ],
+    "216": [
+        "5027: Rhodes Black",
+        "5295: Landshark Blue (Black)"
+    ],
+    "217": [
+        "170: Blue Periwinkle Kelli's",
+        "245: Celadon Sanders",
+        "430: Tom Coleman Green Apple (Revised)",
+        "3183: Tichane Blue Celadon 5321.1",
+        "3866: Blue 1",
+        "4955: Malloy Celadon",
+        "24678: Edouard's Celadon Vert",
+        "24681: Edouard's Transparent"
+    ],
+    "220": [
+        "2098: Purple Glamorama",
+        "2099: Purple Glamorama no GB",
+        "2123: Satin Matte Johnson",
+        "2216: Val Cushing V.C. Satin Stone Recalc"
+    ],
+    "224": [
+        "792: Tomato Red",
+        "793: Tomato Red",
+        "2868: Perry Iron Red",
+        "4010: Tomato Red",
+        "16428: Tomato Red"
+    ],
+    "228": [
+        "1510: Sea Foam",
+        "6839: Reader's Digest Speckled Blue Matte ^6 Glaze"
+    ],
+    "235": [
+        "187: V&O Light Blue",
+        "220: Celadon Blue Green V&O",
+        "316: Clear",
+        "338: Clear Pete Pinnell",
+        "2889: Baccerra Clear",
+        "4836: Beth's Celadon",
+        "5013: PNW-Celadon",
+        "5024: Reeve's Limestone",
+        "5750: Celadon",
+        "6694: Cone 10 Glossy Clear",
+        "9411: Pete Pinnell Clear Adjusted with Cobalt",
+        "12340: VCU Celadon High Fire Glaze Base",
+        "19339: Pinnell Clear",
+        "20482: Celadon Base",
+        "21163: No More Tears Celadon (from J. Britt)"
+    ],
+    "236": [
+        "205: Bronze Manganese Saturated",
+        "5301: Nuka Ash Glaze",
+        "5359: Johnston's Nuka Glaze"
+    ],
+    "238": [
+        "1246: Green Mossy",
+        "3372: GA 5 Cone 6 Straw"
+    ],
+    "244": [
+        "3722: JB Copper Red",
+        "6563: Copper Red",
+        "6664: Copper Red + Silicon Carbide"
+    ],
+    "248": [
+        "1558: Tan Satin Matte",
+        "2739: Reduction Tan Satin Matte"
+    ],
+    "249": [
+        "79: Berry Rust (new)",
+        "8315: Berry Rust Glaze"
+    ],
+    "256": [
+        "1880: Clear Semi-gloss Cone 1 SSG-121",
+        "4694: Colemanite Gloss"
+    ],
+    "258": [
+        "909: Val Cushing Alkaline Matte",
+        "7634: VC Alkaline base, 1. 0 Copper carb"
+    ],
+    "259": [
+        "1372: Matte base",
+        "12119: Frosty Matte",
+        "16158: Frosty Matte Cone 6"
+    ],
+    "271": [
+        "134: Blue c10",
+        "762: Sworoff",
+        "3261: Moma Lavender",
+        "5187: Magnesium Matt Glaze 2",
+        "24631: Stony Matte",
+        "27458: Mamo Lavender"
+    ],
+    "275": [
+        "777: Temmoku-style glaze",
+        "2870: Tenmoku Mirror Black",
+        "8336: Mel's Clayart Black ^10 Reduction Glaze"
+    ],
+    "277": [
+        "3011: Roy Fat White (Blue variation)",
+        "9774: Roy Fat White (Blue variation) (Reid Deschands variation)"
+    ],
+    "281": [
+        "322: Peter Lane's Clear Crackle",
+        "5005: Peter's Celadon",
+        "5395: Scatchard's Clear Feldspathic Gloss",
+        "17685: MM25 basis",
+        "22422: Leo's clear/iron blue"
+    ],
+    "287": [
+        "1148: Clear Glaze 5-6 recalc",
+        "1891: Clear Vals's",
+        "18773: Low Fire Clear"
+    ],
+    "289": [
+        "10433: Alabama Rain",
+        "18586: variegated dove gray"
+    ],
+    "292": [
+        "2571: Easy White",
+        "2743: Hansen 20Wx5 White"
+    ],
+    "410": [
+        "904: 5-20's Tony Hansen",
+        "1140: Clear base",
+        "1479: Ron Roy PMSP-4",
+        "2680: Hansen 20Wx5 Base Bottle Green",
+        "3383: Hansen Clear GA12 Cone 6 Lt. Blue",
+        "3406: Hansen Clear GA12 Darker Green",
+        "8238: Tony Hansen 20 x 5 base ^6 ox.",
+        "17574: Easy E"
+    ],
+    "293": [
+        "13186: Emerald",
+        "13187: Gold Beryl"
+    ],
+    "295": [
+        "2852: Dolomite Blue",
+        "5120: Wise Ear White",
+        "27100: Cooper 285 - Semi-opaque bright white"
+    ],
+    "297": [
+        "1952: Glossy Transparent 1",
+        "2085: Pink Bubblegum",
+        "2145: Semi-Opaque Carlton Ball 04"
+    ],
+    "299": [
+        "17871: ginny/matt/matte test",
+        "18602: Ultraclear"
+    ],
+    "306": [
+        "1562: Temmoku",
+        "2772: Reddish Brown Black Tenmoku"
+    ],
+    "307": [
+        "1401: Val Cushing V.C. Matte Polished",
+        "1549: Val Cushing Spodumene Alfred B.J."
+    ],
+    "315": [
+        "1172: Val Cushing V.C. Clear  2",
+        "1626: Val Cushing White Gloss IV V.C. Easy"
+    ],
+    "318": [
+        "1247: Green Phila",
+        "10918: Strontium Wheathered Copper"
+    ],
+    "325": [
+        "1514: Semi-transparent Matte",
+        "5171: Satin Matte"
+    ],
+    "336": [
+        "790: Val Cushing Tomato Red",
+        "795: Tomato Red K.C.",
+        "5091: Tomato Red II Light Reduction",
+        "5092: Tomato Red K.C."
+    ],
+    "338": [
+        "19342: Keator Satin White",
+        "24813: Black Mountain Base"
+    ],
+    "339": [
+        "1392: Matte Satin VC",
+        "1606: Val Cushing V.C. 8",
+        "2424: Strnad Crystal Matte"
+    ],
+    "313": [
+        "3326: Coleman Dolomite",
+        "4380: Speckled White-Green Glaze",
+        "4959: Mamo White Matte",
+        "5424: Winn's White Matt Glaze",
+        "21841: SPX (Rat City Studios)"
+    ],
+    "341": [
+        "2880: Mamo White (variation)",
+        "4958: Mamo Matte II"
+    ],
+    "349": [
+        "70: Base Glaze Andy Shaw",
+        "7366: Todd Wahlstrom Matte White from Andy Shaw"
+    ],
+    "351": [
+        "12: Alkaline high fire 2",
+        "336: Clear Meloy  revised",
+        "4920: Japanese Limestone",
+        "5569: Pumice Celadon",
+        "6853: Reader's Digest Grassy Celadon ^9-10"
+    ],
+    "353": [
+        "11915: Base clear - Matte/Satin",
+        "12465: Base clear - semi gloss 2 (variation)"
+    ],
+    "52": [
+        "908: Alkaline Gloss Andy's",
+        "1669: Alkaline Blue Gill's",
+        "1675: Alkaline Gill's Base no GB",
+        "1943: Gill's Base",
+        "11680: Water Blue Original"
+    ],
+    "357": [
+        "11147: Westcountry water",
+        "11681: Water Blue Revision 1"
+    ],
+    "363": [
+        "2620: Behrens Brown Slip",
+        "2684: Zakin Mouse Black Slip"
+    ],
+    "365": [
+        "1096: Celadon Faux",
+        "5183: Faux Celadon 2"
+    ],
+    "366": [
+        "6658: Bate's Glossy Clear",
+        "21100: Gawk's Clear"
+    ],
+    "368": [
+        "5011: Plum Saturate Iron",
+        "5354: Iron Spot Black"
+    ],
+    "369": [
+        "751: Splotchy Lavender Glaze",
+        "759: Strawberry Crush George's"
+    ],
+    "372": [
+        "1732: black Rosie's Satin no GB",
+        "1756: Carlton Ball Base"
+    ],
+    "373": [
+        "594: Rutile Blue",
+        "595: Rutile Blue #1",
+        "596: Rutile Blue #2",
+        "598: Rutile Blue II",
+        "602: Sapergia Base",
+        "3254: Rutile Orange Blue",
+        "5038: Rutile Blue",
+        "5039: rutile orange/blue",
+        "10937: Rutile",
+        "20314: Titanium base glaze",
+        "22146: Runny rutile"
+    ],
+    "111": [
+        "597: Rutile Blue I",
+        "880: Yellow Amber"
+    ],
+    "377": [
+        "3250: Jade Green",
+        "7479: Delhi Blue Jade Green Glaze"
+    ],
+    "381": [
+        "539: Ohata Kaki",
+        "613: Val Cushing Saturated Iron Oharata Red",
+        "4621: Ohata Kaki",
+        "4989: Ohata Kaki Revised",
+        "5147: Temple's Persimmon Glaze",
+        "5465: Temple's Persimmon Glaze (original)",
+        "5803: Persimmon",
+        "6379: Ohata Kaki",
+        "11401: Ohata Wesleyan Potters",
+        "12337: Kaki High Fire Glaze Base"
+    ],
+    "93": [
+        "2856: Adrian Red",
+        "5338: David's Khaki Gloss Glaze",
+        "5802: Ohata Red",
+        "6057: Ohata Kaki"
+    ],
+    "383": [
+        "3709: OG CEL5",
+        "6096: Clear (semi matt)",
+        "8343: Candy Apple Red ^6 Glaze"
+    ],
+    "389": [
+        "257: Chun - Brayford",
+        "3773: 92058 Light blue chun",
+        "16664: Jun (Chun) Variation"
+    ],
+    "394": [
+        "2211: Val Cushing V.C. 5000 Stone Matte",
+        "4696: Cushing Opaque Matt"
+    ],
+    "395": [
+        "20085: Toms Redcurrant Jelly",
+        "20086: Purple People Eater"
+    ],
+    "396": [
+        "494: Magnesium Mat-Carleton Ball",
+        "5030: Rhodes White Glaze",
+        "5037: Rosenthal White Satin Matte"
+    ],
+    "406": [
+        "3245: Reitz Purple",
+        "5421: Winn's Purple Glaze"
+    ],
+    "409": [
+        "326: Clear Eva's",
+        "3175: Clear Pete Pinnell (Wollastonite)",
+        "3465: Simple Clear",
+        "3508: Simple Clear + RIO 2%",
+        "3509: Simple Clear + RIO 1.8% CoO 0.2%",
+        "3513: Simple Clear + RIO 1.6% CoO 0.4%",
+        "3517: Simple Clear + RIO 1.4% CoO 0.6%",
+        "3522: Simple Clear + RIO 1.2% CoO 0.8%",
+        "3528: Simple Clear + RIO 1% CoO 1%",
+        "5757: #13 Transparent",
+        "11878: Glaze Stone + Wollastonite",
+        "21344: Jade Celadon"
+    ],
+    "412": [
+        "4914: Hamamda Red Brown (Kaki)",
+        "5773: SLG 30 Matte"
+    ],
+    "413": [
+        "5475: Adam Field's Coleman Celadon",
+        "16427: Coleman Iron Blue Celadon #1"
+    ],
+    "416": [
+        "4842: Black Metal Revised",
+        "5410: Tessha Slip Glaze"
+    ],
+    "419": [
+        "2805: Davidson Blue Matte",
+        "6387: Mackenzie Grey"
+    ],
+    "421": [
+        "3199: D.K. 11 8 revised",
+        "3201: D.K. 11 5 revised"
+    ],
+    "309": [
+        "1194: D.K. 11",
+        "1630: Val Cushing White Liner"
+    ],
+    "422": [
+        "35: Amber- Honey Weiser's",
+        "5112: Weiser Honey",
+        "11723: Tiger Eye Temmoku"
+    ],
+    "423": [
+        "2570: Charcoal Satin Matte",
+        "2707: Frogpond Green",
+        "3693: MC6G 2c M1",
+        "3907: MC6 High Calcium Matte Base 2"
+    ],
+    "439": [
+        "3235: Ron Roy Raw Sienna",
+        "3684: MC6G 2c"
+    ],
+    "498": [
+        "1513: Semi-matte High Calcium Base 2",
+        "3920: MC6 High Calcium Matte Base 1",
+        "20490: BF glossy base glaze"
+    ],
+    "587": [
+        "6798: MC6 Glossy Clear Liner Glaze",
+        "8888: Glossy Clear"
+    ],
+    "426": [
+        "4016: John's Red",
+        "11000: Blue Green Pink (Cedar Hill)",
+        "17366: C.H. Blue Green Pink",
+        "19372: Chun"
+    ],
+    "430": [
+        "813: Val Cushing V.C. IR-F",
+        "1027: Black Shiny"
+    ],
+    "197": [
+        "5517: Val's Turquoise",
+        "11501: Val Turquoise (toms UK variation)"
+    ],
+    "433": [
+        "7245: Val's Turquoise 3134",
+        "17368: Val's Turquoise 3134"
+    ],
+    "542": [
+        "2606: Val Turquoise",
+        "3915: Val Turquoise (Walter Heath's recipe)",
+        "8209: Val's Turquoise ^6 ox.",
+        "8418: Val's Turquoise"
+    ],
+    "436": [
+        "2344: Val Cushing  Base 2",
+        "7735: VC Leadless Glosssy Trans.^4-6, 1 cop"
+    ],
+    "446": [
+        "222: Celadon Blue-Sam Chung no GB",
+        "330: Clear Granatelli 2",
+        "4915: Hensley Clear Glaze"
+    ],
+    "449": [
+        "1138: clear absolutely",
+        "1147: Clear Glaze 5-6",
+        "4134: Perfect Clear"
+    ],
+    "453": [
+        "221: Celadon Blue-Sam Chung",
+        "333: Clear Hensley's"
+    ],
+    "454": [
+        "816: Val Cushing V.C. IR-I",
+        "11395: New Black",
+        "11421: Tenmoku Wesleyan Potters"
+    ],
+    "457": [
+        "156: Blue Les's",
+        "332: Clear Haystack",
+        "342: Clear Tin",
+        "10161: Basic Clear",
+        "19475: MM17 base"
+    ],
+    "461": [
+        "2636: Sharon Cobalt Blue",
+        "2750: Violet Semigloss"
+    ],
+    "464": [
+        "4858: Celadon",
+        "6095: Plum"
+    ],
+    "465": [
+        "620: Semi-Matt White",
+        "10337: Cloudy Turquoise"
+    ],
+    "467": [
+        "6114: Matte Bright Peacock Blue",
+        "21320: Purple Barium Matte"
+    ],
+    "469": [
+        "551: Pinnell Orange Red",
+        "957: Base"
+    ],
+    "471": [
+        "367: Copper Red Ox Blood",
+        "4997: Oxblood Red"
+    ],
+    "474": [
+        "2703: Frogpond Sapphire Blue",
+        "10975: Sapphire Blue (Cedar Hill)"
+    ],
+    "477": [
+        "1098: Celadon Kawaii Revised",
+        "1575: Transparent 1"
+    ],
+    "480": [
+        "6099: Sage Green Original Base",
+        "6212: Odyssey Celadon/3134 frit"
+    ],
+    "481": [
+        "163: Blue New",
+        "2929: Porcelain glaze",
+        "2930: Pale-green celadon",
+        "3176: Clear Pete Pinnell (Wollastonite +Talc)",
+        "3177: Clear Pete Pinnell (+Talc)",
+        "4382: Shaner Clear",
+        "5050: Shaner Clear"
+    ],
+    "83": [
+        "252: Celedon Martell Clear",
+        "6062: Shaner Clear",
+        "7656: porcelain glaze",
+        "17928: Deep Blue Celadon",
+        "19341: Malloy Celadon",
+        "25523: Frazier Celadon"
+    ],
+    "482": [
+        "2721: Oil Spot Rust Brown Underglaze",
+        "12978: Oil Spot Base"
+    ],
+    "296": [
+        "775: Temmoku Mark's",
+        "779: Tenmoku",
+        "1295: IE Black",
+        "4341: Mark's Temmoku (Tenmoku)",
+        "4616: Mark's Base & Tenmoku",
+        "4818: Andrea's Temmoku",
+        "4971: Motown Celadon (GW-28)",
+        "6377: Marks Temmoku",
+        "12347: Temmoku High Fire Glaze Base",
+        "22014: Iron Saturate"
+    ],
+    "486": [
+        "2628: Behrens Titanium White",
+        "3190: Opaque Semi Matte Glaze 8",
+        "3193: Opaque Semi Matte Glaze 5",
+        "3196: Opaque Semi Matte Glaze 2",
+        "5817: \\A\\\" Glaze\"",
+        "19846: Behrend's Floating Blue",
+        "20904: Jade Green"
+    ],
+    "109": [
+        "3194: Opaque Semi Matte Glaze 4",
+        "7329: Jade"
+    ],
+    "488": [
+        "408: Tom Coleman Black",
+        "2926: Fat Black"
+    ],
+    "497": [
+        "4623: Plastic Dolomite",
+        "4950: Magnesia"
+    ],
+    "504": [
+        "323: Clear Crackle rev.",
+        "384: Crimson Reeves",
+        "5016: PVGRASS",
+        "19499: MM33 base"
+    ],
+    "510": [
+        "4: Celadon-type  glaze David Pier",
+        "2821: Britt Blue Celadon",
+        "2888: Limestone Clear",
+        "2894: Pinnell Blue Celadon",
+        "3153: Pinnell Blue Celadon (+Titanium)",
+        "3187: Pinnell Blue Celadon (+Cobalt)",
+        "4571: Pinnell Blue Celadon (NZK & Wollastonite)",
+        "5042: Schulman Celadon",
+        "10834: Pinnell Blue Celadon, NZK, CNZK, Wo, c11",
+        "13107: Pinnel Celadon",
+        "21304: Atomic Tonic I",
+        "21895: Pinnel Blue Celadon (EPK variation)"
+    ],
+    "511": [
+        "368: Copper Red Pablo's",
+        "2873: Pablo Red",
+        "19961: Harvey Red Plum"
+    ],
+    "513": [
+        "4381: Stone Matt Glaze",
+        "4969: Meloy Stoney",
+        "5797: Orange 3"
+    ],
+    "517": [
+        "19762: Toms basic celadon 35",
+        "20162: Toms basic celadon 35L++"
+    ],
+    "518": [
+        "2561: Adam Clear",
+        "2602: EZ Clear"
+    ],
+    "233": [
+        "1038: Blue Dark Specks",
+        "1136: clear 3 part",
+        "1219: Transparent Gloss",
+        "6845: Reader's Digest ^6 Clear"
+    ],
+    "524a": [
+        "318: Clear Base",
+
+        "324: Clear Donna's",
+        "325: Clear durable",
+
+        "343: Clear/Transparent",
+        "2887: Standard Clear",
+        "4838: BINN'S CLEAR",
+        "4837: BINN'S CELADON  MANY MORE TO CHECK>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>",
+        "12944: HOS  1 ekwc"
+    ],
+    "528": [
+        "476: Iron Rust",
+        "612: Saturated Iron Earlham",
+        "6073: Temmoku"
+    ],
+    "529": [
+        "5472: Ceramics Bible Blue-Green Celadon",
+        "7278: Holmsglen TAFE Clear",
+        "8716: porcelain glaze (variation)2",
+        "12563: Base Ema",
+        "22641: Ceramics Bible Celadon (with grolleg)",
+        "27137: Cooper 314  - Bright clear"
+    ],
+    "547": [
+        "359: Tom Coleman Copper Red 3",
+        "2737: Reduction Oxblood",
+        "2780: Reduction Oxblood Red",
+        "2877: Kirkland Copper Red",
+        "5815: Red #1",
+        "6051: Don Davis Copper Red",
+        "6091: Web Red (from Clayart)",
+        "6092: Web Red (Oxblood)",
+        "22395: Selsor Base"
+    ],
+    "558": [
+        "796: Tom Coleman Tomato Red",
+        "2977: Coleman Kaki",
+        "13160: Tomato Iron Red"
+    ],
+    "560": [
+        "2609: Martens Ultra Clear",
+        "2654: Edwards E-Z 5 Base",
+        "18688: Very Stable I"
+    ],
+    "562": [
+        "3385: Satin Matt Cone 6 Lt. Blue-Green GA23",
+        "6755: Satin Matt  GA23/7 (nach Bailey) Mischung vom 16.12.2016",
+        "7966: Arrowmont Blue Green",
+        "13214: GA23 Base"
+    ],
+    "565": [
+        "3189: Celadon from Tichane-inspired triaxial",
+        "3305: Celadon from Tichane-inspired triaxial (variation)",
+        "4510: 200.0.1",
+        "6148: Prickley Potter's Low Expansion Chun",
+        "10981: David Beatie's Blue Celadon",
+        "21897: Tichane Triaxial Celadon (Green)"
+    ],
+    "572": [
+        "4003: Mac Black",
+        "4347: Rust Black Temmoku (Tenmoku)",
+        "5110: Voulkos Black",
+        "5422: Winn's Temmoku Glaze",
+        "13158: Peach Black (Tenmoku)"
+    ],
+
+    "577": [
+        "5468: Splotchy Lavender Glaze (original)",
+        "12292: MSU Copper Red"
+    ],
+    "579": [
+        "618: Val Cushing V.C. Saturated Iron",
+        "3377: Temmoku Sugar Maples Cone 6",
+        "4961: MARLENE'S TENMOKU"
+    ],
+    "581": [
+        "856: White Hippie",
+        "3324: Coleman Magnesia Glaze for Porcelain",
+        "3861: Market Blue",
+        "4378: Greenwich House Pottery High Alumina Matte"
+    ],
+    "582": [
+        "13: Alkaline high fire 2 no cs",
+        "4908: GW-28 Salt",
+        "6856: Reader's Digest Clear ^9-10 Glaze"
+    ],
+    "229": [
+        "683: Shino Neely's Dark",
+        "3079: RJ Dry Shino #16",
+        "4178: Coleman Carbon Trap Shino",
+        "4855: Carbon Trap",
+        "5332: Cindy's Orange Crawler Glaze",
+        "6385: American Shino",
+        "27461: Neely Shino (ARAC)"
+    ],
+    "251": [
+        "635: Shino #4 David Cuzick",
+        "4170: Barren's Shino",
+        "4193: Grant's Shino",
+        "4230: Shaner Shino",
+        "10232: Shino A shiny",
+        "26283: Carol's Orange Shino"
+    ],
+    "252": [
+        "636: Shino - Roach Trap",
+        "703: Shino Virginia Wirt's Carbon Trap",
+        "4186: Columbia Visual Arts Ctr",
+        "4866: Class Version Wertz Shino",
+        "5032: Roach Trap Shino"
+    ],
+    "340": [
+        "645: Shino David Shaner's Carbon Trap",
+        "663: Shino JP's #1188 White/Orange/Pink Super Carbon trap",
+        "672: Shino Kansas City",
+        "673: Shino Kansas City no spod",
+        "674: Shino Kansas City no spod w/soda",
+        "4169: Archie Bray Shino",
+        "4210: JP's #1188",
+        "4607: Bray Shino",
+        "5113: Wertz",
+        "5114: Wertz Carbon Trap",
+        "5781: Chuck Hindes Shino",
+        "5791: Shino #5",
+        "11631: Gustin Shino",
+        "24679: Edouard's Shino"
+    ],
+    "387": [
+        "670: Shino June Perry's Possibility",
+        "2924: Waxy white Shino",
+        "4187: Cornell Climax Red",
+        "4215: Nepheline Syenite Basic Shino",
+        "5060: Shino Cottage Cheese",
+        "10234: Shino C Pot Camp standard"
+    ],
+    "443": [
+        "642: Shino Carbon Trapping Orange",
+        "4173: Buckner Orange Carbon Trap",
+        "11548: Golden Shino"
+    ],
+    "490": [
+        "701: Shino Type Glaze",
+        "4219: Rob's Wirt Variation",
+        "5115: Wertz Original Carbon Trap"
+    ],
+    "494": [
+        "4608: Cardew Shino #1 These recipes are from Before Wirt\u2019s",
+        "5096: Ushino"
+    ],
+    "316": [
+        "5098: Ushino 5",
+        "5099: Ushino6"
+    ],
+    "543": [
+        "626: Shino #1 Warren MacKenzie's",
+        "654: Shino Gustin's #1 Variation",
+        "662: Shino JP's #1006 Orange Carbon Trap",
+        "666: Shino June Perry's #1227 Ferguson",
+        "711: Shino Wirt",
+        "4195: Gustin Wirt Variation #5",
+        "5057: Shino",
+        "5405: Snowmass Shino Glaze",
+        "5467: Snowmass Shino Glaze (original)",
+        "10939: ferguson Shino",
+        "11452: GWU Gold Shino Glaze 2",
+        "19046: Pink Shino cone 9-10 Redux"
+    ],
+    "551": [
+        "708: Shino White Carbon Trap - dry-glaze",
+        "709: Shino White Carbon Trap 3"
+    ],
+    "575": [
+        "2966: Lau Lustre",
+        "4943: Lav Luster Shino"
+    ],
+    "578": [
+        "696: Shino Southwest Craft Center",
+        "4172: Buckner Shino BBSH"
+    ],
+    "3": [
+        "1525: Shino type Glaze",
+        "2733: Reduction Shino",
+        "5251: Translucent Shino"
+    ],
+    "28": [
+        "653: Shino Gustin's #1",
+        "659: Shino Jeff Oestreich's",
+        "687: Shino Orange",
+        "2971: Gustin Shino",
+        "4907: Gustin Shino",
+        "27462: Oestreich Carbon Trap Shino "
+    ],
+    "65": [
+        "668: Shino June Perry's #790 Red",
+        "5830: HVAR Shino #3",
+        "5832: Dark Shino #5",
+        "6768: SA Orange Shino",
+        "10236: Shino D"
+    ],
+    "74": [
+        "639: Shino Brian Jensen's 329 red",
+        "11633: Malcolm Davis Super Crystal",
+        "19345: Malcolm Davis Shino"
+    ],
+    "144": [
+        "658: Shino Jack Troy's Carbon Trap",
+        "675: Shino Linda's",
+        "682: Shino McKenzie",
+        "694: Shino SO41",
+        "706: Shino White Carbon Trap",
+        "4191: Eastern Market Carbon Trap",
+        "4214: Linda's Pink Shino",
+        "4218: Rick's Shino",
+        "4886: E.A.C. Shino",
+        "5014: Porcelain Shino",
+        "6058: B-28 Shino",
+        "17645: Dresang Shino"
+    ],
+    "184": [
+        "643: Shino Craig Pearce Salt",
+        "5061: Shino ubeta"
+    ]
+}

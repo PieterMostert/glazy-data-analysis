@@ -45,8 +45,6 @@ Problems with the dataset:
 
 materials whose analyses differ significantly from their theoretical analyses (Colemanite, ash glazes)
 
-Non-uniform distribution of firing temperatures.
-
 A big issue with this dataset is that there are many duplicates and slight variants. If these are not dealt with, the test set will overlap with the training set, and this will artificially decrease the test error. While the duplicates are easy to identify, the slight variants pose a substantial challenge.
  
 I decided to deal with this problem by grouping glazes that derive from a common origin, and weighting them so that the sum of the weights in a group is one. It's not clear what the best way of grouping glazes is, but I decided to place glaze recipes A and B in the same group if at least one of the following cases holds:
@@ -65,8 +63,7 @@ Note that in the last two conditions, the oxide compositions may differ consider
 
 To group the glazes, I used the K-means clustering algorithm to identify potential groups, and then examined them on a case-by-case basis to see if they should be split or combined with other groups, based on the conditions above. This is a painstaking process that involves looking up the recipes on Glazy. There's a fair amount of ambiguity involved, and I've had a make a number of judgement calls. Fortunately Glazy gives a list of recipes with the same base, which helps with the second last case. 
 
-I still haven't finished going through the potential groups manually, but I've processed just over 70% of them. The ones I've checked can be found [here](https://pietermostert.github.io/glazy-data-analysis/html/verified-clusters.html), and the rest [here](https://pietermostert.github.io/glazy-data-analysis/html/unverified-clusters.html)
-https://pietermostert.github.io/glazy-data-analysis/html/unverified-clusters.html.
+I still haven't finished going through the potential groups manually, but I've processed just over 70% of them. The ones I've checked can be found [here](https://pietermostert.github.io/glazy-data-analysis/glazy_clusters_checked.json), and the rest [here](https://pietermostert.github.io/glazy-data-analysis/glazy_clusters_unchecked.json).
 
 ## Data cleaning
 
@@ -79,7 +76,7 @@ I decided to exclude 'speciality' glazes, so removed crawl and crater glazes, an
 
 Most potters contributing to Glazy avoid Lead and Cadmium, so glazes containing either of these were removed. Glazes with silver and bismuth subnitrate were also removed, since there were only a handful of them.
 
-Glazes that were marked as untested were removed, as well as glazes described as underfired. A few glazes which had photos that showed a clearly unmelted glaze, were also removed. These glazes were found by searching Glazy for keywords, as well as by examining glazes whose listed temperature was much lower than the predicted firing temperature, based on initial models. The glazes excluded are listed in recipe_prep_1, together with reasons for their exclusion. 
+Glazes that were marked as untested were removed, as well as glazes described as underfired. A few glazes which had photos that showed a clearly unmelted glaze, were also removed. These glazes were found by searching Glazy for keywords, as well as by examining glazes whose listed temperature was much lower than the predicted firing temperature, based on initial models. The glazes excluded are listed in recipe_processing_1, together with reasons for their exclusion. 
 
 It appears that glazes high in Alumina and Boron tend to have fairly wide firing ranges. As an extreme example, [Purdy and Fox](https://www.ideals.illinois.edu/handle/2142/13255) describe a test glaze successfully fired from cone 010 to 10 (though it does contain Lead). This makes predictions of the average firing temperature both more difficult and less useful, so glazes with Boron over 0.8 UMF were excluded.
 
