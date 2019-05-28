@@ -1,7 +1,7 @@
 # Glazy Data Analysis
 
 (Work in progress)
-This project describes my attempts to use machine learning to understand the effect of chemical composition on the firing temperature of ceramic glazes. The dataset of glazes I'm using is taken from [Glazy](https:www.glazy.org), an open-source database of glaze recipes. 
+This project describes my attempts to use machine learning to understand the effect of chemical composition on the firing temperature of ceramic glazes. The dataset of glazes I'm using is taken from [Glazy](https://glazy.org), an open-source database of glaze recipes. 
 
 The recipes in Glazy come mostly from collections put together by American potters since the 1970s, although many of them probably originate much earlier, in China, Korea, and Japan. They therefore reflect an aesthetic (or rather, several groups of aesthetics) that is not representative of all glazes ever made, or of all potential glazes. A model that is good at predicting the firing temperatures of glazes in this collection is of limited use, since recipes coming from the same population most likely already have an established firing temperature. On the other hand, test recipes created by randomly choosing ingredients generate a different distribution, so one can't say anything about the accuracy of the model when applied to such recipes.
 
@@ -66,6 +66,7 @@ Note that in the last two conditions, the oxide compositions may differ consider
 To group the glazes, I used the K-means clustering algorithm to identify potential groups, and then examined them on a case-by-case basis to see if they should be split or combined with other groups, based on the conditions above. This is a painstaking process that involves looking up the recipes on Glazy. There's a fair amount of ambiguity involved, and I've had a make a number of judgement calls. Fortunately Glazy gives a list of recipes with the same base, which helps with the second last case. 
 
 I still haven't finished going through the potential groups manually, but I've processed just over 70% of them. The ones I've checked can be found [here](https://pietermostert.github.io/glazy-data-analysis/html/verified-clusters.html), and the rest [here](https://pietermostert.github.io/glazy-data-analysis/html/unverified-clusters.html)
+https://pietermostert.github.io/glazy-data-analysis/html/unverified-clusters.html.
 
 ## Data cleaning
 
