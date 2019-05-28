@@ -81,8 +81,6 @@ Glazes that were marked as untested were removed, as well as glazes described as
 
 It appears that glazes high in Alumina and Boron tend to have fairly wide firing ranges. As an extreme example, [Purdy and Fox](https://www.ideals.illinois.edu/handle/2142/13255) describe a test glaze successfully fired from cone 010 to 10 (though it does contain Lead). This makes predictions of the average firing temperature both more difficult and less useful, so glazes with Boron over 0.8 UMF were excluded.
 
-Based on this, and to reduce the dimension of the feature space, I excluded glazes with more than the threshhold amount of ZrO, FeO, Cu2O, MnO, MnO2, P2O5, Cr2O3 and SrO. Glazes which contained less than the threshhold amounts, had these oxides removed. To further reduce the feature space, I combined the molar percentages of K2O and Na2O, writing the combination as KNaO, as is common practice in the field. While Potassium and Sodium aren't completely interchangeable in glazes, the difference is generally thought to be small. It may be that Barium and Strontium have a similar relationship, but there doesn't seem to be any consensus on this. 
-
 I decided not to automate the removal of outliers. However, I used an isolation forest to identify outliers, and examined these individually. This turned up a couple of recipes where an ingredient was missing its oxide analysis. 
 
 ## Which metrics to use / format of data
