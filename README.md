@@ -30,23 +30,19 @@ In an ideal world, the firing temperature would be a function of the chemical co
 
 A complication that we can't overcome is that the oxide composition doesn't tell the whole story; the materials that make up a recipe matter. Whether they are crystalline or glassy, have large or small particle sizes, can have an effect on how well melted a glaze is at a given temperature. So we'll have to accept some variability based on the materials used. 
 
-The accuracy of a glaze's oxide composition depends on the accuracies of oxide compositions of its ingredients, and often these are not known exactly. For example, the mineral potash feldspar (potspar) contains 16.9% Potassium oxide by weight, but the material sold as potspar generally contains other minerals. while most potash feldspars have less. For recipes where the particular brand of potash feldspar is unknown, the analysis of pure potspar whose analyses differ significantly from their theoretical analyses (Colemanite, ash glazes)
+The accuracy of a glaze's oxide composition depends on the accuracies of oxide compositions of its ingredients, and often these are not known exactly. The composition of materials such as Colemanite and wood ash may differ significantly from the compositions listed in Glazy. These are relatively uncommon glaze ingredients, so hopefully the error resulting from incorrect analyses has only a small effect on the model. Feldspars are more common, and while their composition also differs from that of pure potash or soda feldspar, this variation isn't as pronounced as it is for Colemanite and wood ash.
 
 Another source of variability is that the atmosphere of the kiln can have an effect on the firing temperature, particularly for glazes high in iron. While there is the option to indicate the firing atmosphere of glazes in Glazy, these are not consistently filled in, so I've decided not to try control this source of variability, at least for now. 
 
-A further problem is that the temperature at which a glaze is considered mature can be quite subjective. A given glaze might be deemed satisfactory over a fairly large range of temperatures, depending on what effects the potter is looking for. To reduce the amount of variability, I've excluded glazes that are obviously not completely melted. Even so, some glazes are well-melted and stable over a relatively wide temperature range. In Glazy, there are fields to indicate the lower and upper cones to which a glaze can be fired to, so in principle one could try predict these bounds. However, since many entries simply list a single temperature (whatever the potter using the glaze fires to), I've decided to simply predict the midpoint of this range. Of course, the temperature listed might not be the midpoint. 
+A further problem is that the temperature at which a glaze is considered mature can be quite subjective. A given glaze might be deemed satisfactory over a fairly large range of temperatures, depending on what effects the potter is looking for. To reduce the amount of variability, I've excluded glazes that are obviously not completely melted. Even so, some glazes are well-melted and stable over a relatively wide temperature range. In Glazy, there are fields to indicate the lower and upper cones to which a glaze can be fired to, so in principle one could try predict these bounds. However, since many entries (over 60%) simply list a single temperature (whatever the potter using the glaze fires to), I've decided to simply predict the midpoint of this range. Of course, the temperature listed might not be the midpoint. The histogram below shows the distribution of the widths of the firing ranges, as recorded in Glazy.
+
+![Firing range widths](Images/Firing_range_widths.png)
 
 If we could determine, for each oxide composition, the range of temperatures at which a glaze is fully melted, smooth, and hasn't run off the pot, we could take the midpoint of this range, and use this to define an average firing temperature as a function of the oxide composition (ignoring the effects of material properties and atmosphere for the moment). We'd expect this function to vary relatively smoothly, for the most part, although there will be points where eutectic troughs give rise to sharp local minima. We'd expect the average firing temperatures we obtain from the Glazy data, by contrast, to deviate from this function in a relatively unpredictable manner, since this depends on the personal aesthetics of the potters who've contributed to the database. Since we're more interested in the average behaviour, we'll use a model with a reasonable amount of regularisation to try and capture this.
 
-...
+
 
 ## Problems with the dataset:
-
-
-
-A number of oxides are only present in non-trivial amounts in a minority of glazes, which makes it unlikely that their effect on the firing temperature will be visible in the data. The chart below shows the weighted percent of glazes that contain more than 0.5 percent mole of the oxides listed.
-
-![Percentages of glazes containing non-trivial amounts of given oxides](Images/recipes_containing_given_oxide.png)
 
 A big issue with this dataset is that there are many duplicates and slight variants. If these are not dealt with, the test set will overlap with the training set, and this will artificially decrease the test error, and encourage overfitting. While the duplicates are easy to identify, the slight variants pose a substantial challenge.
  
@@ -67,6 +63,10 @@ Note that in the last two conditions, the oxide compositions may differ consider
 To group the glazes, I used the K-means clustering algorithm to identify potential groups, and then examined them on a case-by-case basis to see if they should be split or combined with other groups, based on the conditions above. This is a painstaking process that involves looking up the recipes on Glazy. There's a fair amount of ambiguity involved, and I've had a make a number of judgement calls. Fortunately Glazy gives a list of recipes with the same base, which helps with the second last case. 
 
 I still haven't finished going through the potential groups manually, but I've processed just over 70% of them. The ones I've checked can be found [here](https://pietermostert.github.io/glazy-data-analysis/glazy_clusters_checked.json), and the rest [here](https://pietermostert.github.io/glazy-data-analysis/glazy_clusters_unchecked.json).
+
+A number of oxides are only present in non-trivial amounts in a minority of glazes, which makes it unlikely that their effect on the firing temperature will be visible in the data. The chart below shows the weighted percent of glazes that contain more than 0.5 percent mole of the oxides listed.
+
+![Percentages of glazes containing non-trivial amounts of given oxides](Images/recipes_containing_given_oxide.png)
 
 ## Data cleaning
 
