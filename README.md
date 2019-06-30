@@ -18,9 +18,9 @@ However, there are at least two situations where a model can be useful:
 
 1. A model can be used to flag recipes in the collection that may be recorded incorrectly. In fact, I've already found a number of incorrect records by examining glazes whose stated firing temperature differs wildly from the predicted one. Alternatively, if the predicted temperature is significantly higher than the listed one, this may a sign that the glaze isn't fully mature, and may therefore be less durable. A glaze whose predicted temperature is significantly lower than the listed one may be very fluid at the listed temperature.
 
-2. If we have a model that gives predictions together with confidence intervals, we can say something meaningful about independently created test glazes. This is still a work in progress. I've looked at using a Gaussian process model, but it's not immediately clear how best to take into account the fact that glazes occur in groups (more on this below). Another issue is that the training time scales cubically with the number of recipes, so if Glazy expands substantially, this approach may become infeasable. There may be other approaches that can be tackled using Tensorflow's probability library, but I haven't looked into this yet. As a temporary stand-in, I've plotted the density of data points alongside the predictions to give some indication of how much confidence to place in them.
+2. If we have a model that gives predictions together with confidence intervals, we can say something meaningful about independently created test glazes. This is still a work in progress. I've looked at using a Gaussian process model, but it's not immediately clear how best to take into account the fact that glazes occur in groups (more on this below). Another issue is that the training time scales cubically with the number of recipes, so if Glazy expands substantially, this approach may become infeasable. There may be other approaches that can be tackled using Tensorflow's probability library, but I haven't looked into this yet. 
 
-For example, the first plot below shows the predictions for a family of glazes where only the proportions of Silica and Alumina are varied. Below it is a plot of the density. The predictions in the regions of high density are in line with conventional wisdom (see Daniel de Montmollin's fusion diagrams).
+As a temporary stand-in for a model with confidence intervals, I've plotted the density of data points alongside the predictions to give some indication of how much confidence to place in them. For example, the first plot below shows the predictions for a family of glazes where only the proportions of Silica and Alumina are varied. Below it is a plot of the density. The predictions in the regions of high density are in line with conventional wisdom (see Daniel de Montmollin's fusion diagrams).
 
 ![Firing temperature predictions](Images/Stull_temp_predictions.png)
 
@@ -29,6 +29,8 @@ For example, the first plot below shows the predictions for a family of glazes w
 In an ideal world, the firing temperature would be a function of the chemical composition of a glaze, and with enough data we'd be able to approximate this function reasonably well. Unfortunately, things aren't so simple, for several reasons. The first is that the maturity of a glaze also depends not only on the maximum temperature, but also on the rate at which the temperature increases. For this reason, [pyrometric cones](https://en.wikipedia.org/wiki/Pyrometric_cone) are used instead of temperatures. However, for a fixed rate of temperature rise, a pyrometric cone will bend at a pre-determined temperature. The glazes in Glazy are described in terms of Orton cones, and I've used the [chart](https://www.ortonceramic.com/files/2676/File/Orton-Cone-Chart-C-022-14-2016) published by Orton, with a 60C/hr rate of temperature rise to map from Orton cones (regular, self-supporting) to temperatures. We'll continue to refer to the firing temperature of a glaze, with the understanding that this implicitly refers to its Orton cone under the inverse of this mapping.
 
 A complication that we can't overcome is that the oxide composition doesn't tell the whole story; the materials that make up a recipe matter. Whether they are crystalline or glassy, have large or small particle sizes, can have an effect on how well melted a glaze is at a given temperature. So we'll have to accept some variability based on the materials used. 
+
+The accuracy of a glaze's oxide composition depends on the accuracies of oxide compositions of its ingredients, and often these are not known exactly. For example, the mineral potash feldspar (potspar) contains 16.9% Potassium oxide by weight, but the material sold as potspar generally contains other minerals. while most potash feldspars have less. For recipes where the particular brand of potash feldspar is unknown, the analysis of pure potspar whose analyses differ significantly from their theoretical analyses (Colemanite, ash glazes)
 
 Another source of variability is that the atmosphere of the kiln can have an effect on the firing temperature, particularly for glazes high in iron. While there is the option to indicate the firing atmosphere of glazes in Glazy, these are not consistently filled in, so I've decided not to try control this source of variability, at least for now. 
 
@@ -40,7 +42,7 @@ If we could determine, for each oxide composition, the range of temperatures at 
 
 ## Problems with the dataset:
 
-materials whose analyses differ significantly from their theoretical analyses (Colemanite, ash glazes)
+
 
 A number of oxides are only present in non-trivial amounts in a minority of glazes, which makes it unlikely that their effect on the firing temperature will be visible in the data. The chart below shows the weighted percent of glazes that contain more than 0.5 percent mole of the oxides listed.
 
