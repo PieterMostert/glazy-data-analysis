@@ -42,15 +42,15 @@ If we could determine, for each oxide composition, the range of temperatures at 
 
 The following diagram attempts to illustrate the situation. Here the oxide composition has been reduced to one dimension, for simplicity. The grey band represents the range of acceptable firing temperatures, and the red dots represent glazes. 
 
-![Simplified representation](Images/Data_cartoon.png)
+![Simplified representation](Images/Data_cartoon.jpg)
 
 The green line below shows the average firing temperature, based on the acceptable range. 
 
-![Simplified representation average](Images/Data_cartoon_avg.png)
+![Simplified representation average](Images/Data_cartoon_avg.jpg)
 
 However, it's unlikely one can find this curve based on the glazes in the dataset alone. Models that fit the data reasonably well will tend to level off around 1222C and 1285C, (cones 6 and 10), since most glazes in the database are close to one of these temperatures. 
 
-![Simplified representation fit](Images/Data_cartoon_fit.png)
+![Simplified representation fit](Images/Data_cartoon_fit.jpg)
 
 A more rigid model may give a better approximation to the green curve, but the challenge is in quantifying how good this approximation is.
 
