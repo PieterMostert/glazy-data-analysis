@@ -38,15 +38,27 @@ A further problem is that the temperature at which a glaze is considered mature 
 
 ![Firing range widths](Images/Firing_range_widths.png)
 
-If we could determine, for each oxide composition, the range of temperatures at which a glaze is fully melted, smooth, and hasn't run off the pot, we could take the midpoint of this range, and use this to define an average firing temperature as a function of the oxide composition (ignoring the effects of material properties and atmosphere for the moment). We'd expect this function to vary relatively smoothly, for the most part, although there will be points where eutectic troughs give rise to sharp local minima. We'd expect the average firing temperatures we obtain from the Glazy data, by contrast, to deviate from this function in a relatively unpredictable manner, since this depends on the personal aesthetics of the potters who've contributed to the database. Since we're more interested in the average behaviour, we'll use a model with a reasonable amount of regularisation to try and capture this.
+If we could determine, for each oxide composition, the range of temperatures at which a glaze is fully melted, smooth, and hasn't run off the pot, we could take the midpoint of this range, and use this to define an average firing temperature as a function of the oxide composition (ignoring the effects of material properties and atmosphere for the moment). We'd expect this function to vary relatively smoothly, for the most part, although there will be points where eutectic troughs give rise to sharp local minima. We'd expect the average firing temperatures we obtain from the Glazy data, by contrast, to deviate from this function in a relatively unpredictable manner, since this depends on the personal aesthetics and circumstances of the potters who've contributed to the database. 
 
+The following diagram attempts to illustrate the situation. Here the oxide composition has been reduced to one dimension, for simplicity. The grey band represents the range of acceptable firing temperatures, and the red dots represent glazes. 
 
+![Simplified representation](Images/Data_cartoon.png)
+
+The green line below shows the average firing temperature, based on the acceptable range. 
+
+![Simplified representation average](Images/Data_cartoon_avg.png)
+
+However, it's unlikely one can find this curve based on the glazes in the dataset alone. Models that fit the data reasonably well will tend to level off around 1222C and 1285C, (cones 6 and 10), since most glazes in the database are close to one of these temperatures. 
+
+![Simplified representation fit](Images/Data_cartoon_fit.png)
+
+A more rigid model may give a better approximation to the green curve, but the challenge is in quantifying how good this approximation is.
 
 ## Problems with the dataset:
 
 A big issue with this dataset is that there are many duplicates and slight variants. If these are not dealt with, the test set will overlap with the training set, and this will artificially decrease the test error, and encourage overfitting. While the duplicates are easy to identify, the slight variants pose a substantial challenge.
  
-I decided to deal with this problem by grouping glazes that derive from a common origin, and weighting them so that the sum of the weights in a group is one. It's not clear what the best way of grouping glazes is, but I decided to place glaze recipes A and B in the same group if at least one of the following cases holds:
+I decided to deal with this problem by grouping glazes that derive from a common origin, and weighting each glaze in a group of size n by 1/n. It's not clear what the best way of grouping glazes is, but I decided to place glaze recipes A and B in the same group if at least one of the following cases holds:
 
 * Percentages of materials in recipes A and B differ by small amounts.
 
@@ -62,7 +74,9 @@ Note that in the last two conditions, the oxide compositions may differ consider
 
 To group the glazes, I used the K-means clustering algorithm to identify potential groups, and then examined them on a case-by-case basis to see if they should be split or combined with other groups, based on the conditions above. This is a painstaking process that involves looking up the recipes on Glazy. There's a fair amount of ambiguity involved, and I've had a make a number of judgement calls. Fortunately Glazy gives a list of recipes with the same base, which helps with the second last case. 
 
-I still haven't finished going through the potential groups manually, but I've processed just over 70% of them. The ones I've checked can be found [here](https://pietermostert.github.io/glazy-data-analysis/glazy_clusters_checked.json), and the rest [here](https://pietermostert.github.io/glazy-data-analysis/glazy_clusters_unchecked.json).
+I still haven't finished going through the potential groups manually, but I've processed just over 75% of them. The ones I've checked can be found [here](https://pietermostert.github.io/glazy-data-analysis/glazy_clusters_checked.json), and the rest [here](https://pietermostert.github.io/glazy-data-analysis/glazy_clusters_unchecked.json).
+
+When splitting recipes into training, validation and test sets, the splits are made on the level of groups, so recipes from the same group don't appear in both the training and test sets, for example. 
 
 A number of oxides are only present in non-trivial amounts in a minority of glazes, which makes it unlikely that their effect on the firing temperature will be visible in the data. The chart below shows the weighted percent of glazes that contain more than 0.5 percent mole of the oxides listed.
 
