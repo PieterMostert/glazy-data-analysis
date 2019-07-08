@@ -46,7 +46,7 @@ The following diagram attempts to illustrate the situation. Here the oxide compo
 
 The green line below shows the average firing temperature, based on the acceptable range. 
 
-![Simplified representation average](Images/Data_cartoon_avg.jpg)
+![Simplified representation average](Images/Data_cartoon_avg.JPG)
 
 However, it's unlikely one can find this curve based on the glazes in the dataset alone. Models that fit the data reasonably well will tend to level off around 1222C and 1285C, (cones 6 and 10), since most glazes in the database are close to one of these temperatures. 
 
